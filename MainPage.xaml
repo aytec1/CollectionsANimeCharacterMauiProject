@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:AnimeDex.ViewModels"
+    x:Class="AnimeDex.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <Button 
+                Text="Ajouter un personnage" 
+                Clicked="OnAddCharacterClicked" />
+
+            <CollectionView ItemsSource="{Binding Characters}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BorderColor="Gray" Padding="10">
+                            <HorizontalStackLayout Spacing="10">
+                                <Image Source="{Binding ImagePath}" WidthRequest="80" HeightRequest="80" />
+                                <VerticalStackLayout>
+                                    <Label Text="{Binding Name}" FontAttributes="Bold" />
+                                    <Label Text="{Binding Description}" FontSize="12" />
+                                    <Label 
+                                        Text="{Binding Strength, StringFormat='Force: {0}'}" 
+                                        FontSize="10" />
+                                    <Label 
+                                        Text="{Binding Intelligence, StringFormat='Intelligence: {0}'}" 
+                                        FontSize="10" />
+                                </VerticalStackLayout>
+                            </HorizontalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
