@@ -13,6 +13,7 @@ namespace MyApp.Model
         public string Description { get; set; } = string.Empty;
         public string Picture { get; set; } = string.Empty;
         public string SpecialAttack { get; set; } = string.Empty; 
-        public string Sound { get; set; } = string.Empty;         
+        public string Sound { get; set; } = string.Empty;
+        public string Origin { get; set; } = string.Empty;
     }
 }

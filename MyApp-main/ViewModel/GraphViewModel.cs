@@ -83,7 +83,7 @@ public partial class GraphViewModel : ObservableObject
        };
     public GraphViewModel()
     {
-        Chart myChart = new RadarChart
+        Chart myChart = new PieChart
         {
             Entries = entries
         };

@@ -30,10 +30,23 @@ public partial class DetailsViewModel : ObservableObject
     public partial string? SpecialAttack { get; set; }
 
     [ObservableProperty]
+    public partial string? Origin { get; set; }
+
+    [ObservableProperty]
     public partial string? SerialBufferContent { get; set; }
 
     [ObservableProperty]
     public partial bool EmulatorON_OFF { get; set; } = false;
+
+    public List<string> OriginsList { get; } = new() // 🆕 Liste pour le Picker
+    {
+        "One Piece",
+        "Naruto",
+        "Bleach",
+        "Dragon Ball",
+        "My Hero Academia",
+        "Hunter x Hunter"
+    };
 
     readonly DeviceOrientationService MyScanner;
     readonly JSONServices MyJSONService;
@@ -84,6 +97,7 @@ public partial class DetailsViewModel : ObservableObject
                 Picture = item.Picture;
                 Sound = item.Sound;
                 SpecialAttack = item.SpecialAttack;
+                Origin = item.Origin;
                 break;
             }
         }
@@ -108,6 +122,7 @@ public partial class DetailsViewModel : ObservableObject
             existing.Picture = Picture ?? string.Empty;
             existing.Sound = Sound ?? string.Empty;
             existing.SpecialAttack = SpecialAttack ?? string.Empty;
+            existing.Origin = Origin ?? string.Empty;
         }
         else if (!string.IsNullOrWhiteSpace(Id))
         {
@@ -119,7 +134,8 @@ public partial class DetailsViewModel : ObservableObject
                 Description = Description ?? string.Empty,
                 Picture = Picture ?? string.Empty,
                 Sound = Sound ?? string.Empty,
-                SpecialAttack = SpecialAttack ?? string.Empty
+                SpecialAttack = SpecialAttack ?? string.Empty,
+                Origin = Origin ?? string.Empty
             });
         }
 

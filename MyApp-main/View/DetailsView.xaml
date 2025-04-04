@@ -17,7 +17,7 @@
         </HorizontalStackLayout>
 
         <!--  Adapté pour 7 lignes -->
-        <Grid ColumnDefinitions="0.1*,0.3*,*" RowDefinitions="*,*,*,*,*,*,*" Padding="20" RowSpacing="20">
+        <Grid ColumnDefinitions="0.1*,0.3*,*" RowDefinitions="*,*,*,*,*,*,*,*" Padding="20" RowSpacing="20">
 
             <Label  Grid.Column="0" Grid.Row="0" Text="Id:" VerticalOptions="Center"/>
             <Entry  Grid.Column="1" Grid.Row="0"  
@@ -62,10 +62,16 @@
                     VerticalOptions="Center" 
                     HorizontalOptions="Center" 
                     WidthRequest="300" />
+            <Label Grid.Column="0" Grid.Row="6" Text="Origine:" VerticalOptions="Center"/>
+            <Picker Grid.Column="1" Grid.Row="6"
+                    ItemsSource="{Binding OriginsList}"
+                    SelectedItem="{Binding Origin}"
+                    WidthRequest="300"
+                    HorizontalOptions="Center" />
 
             <Button x:Name="MyAnimatedButton"
                     Grid.Column="1"
-                    Grid.Row="6"
+                    Grid.Row="7"
                     WidthRequest="100" 
                     HorizontalOptions="Center"
                     Text="Valider"

@@ -1,1 +1,1 @@
-C:\Users\ayoub\Downloads\MyApp-main\MyApp.csproj;x64
+C:\Users\jackb\OneDrive\Documents\Document etudes HELB\NET\MyApp-main\MyApp.csproj;x64
