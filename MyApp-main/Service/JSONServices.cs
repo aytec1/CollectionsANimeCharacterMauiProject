@@ -13,7 +13,7 @@ namespace MyApp.Service;
 public class JSONServices
 {
 
-    internal async Task<List<AnimeCharacter>> GetStrangeAnimals()
+    internal async Task<List<AnimeCharacter>> GetAnimeCharacters()
     {
         //var url = "http://localhost:32774/json?FileName=MyAnimeCharacters.json";
         var url = "https://185.157.245.38:5000/json?FileName=MyAnimeCharacters.json";
@@ -43,7 +43,7 @@ public class JSONServices
         return MyList ?? new List<AnimeCharacter>();
     }
 
-    internal async Task SetStrangeAnimals(List<AnimeCharacter> MyList)
+    internal async Task SetAnimeCharacters(List<AnimeCharacter> MyList)
     {
         //var url = "http://localhost:32774/json";
         var url = "https://185.157.245.38:5000/json";

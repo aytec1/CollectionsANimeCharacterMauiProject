@@ -140,6 +140,6 @@ public partial class DetailsViewModel : ObservableObject
         }
 
         //  Sauvegarde dans le JSON distant
-        await MyJSONService.SetStrangeAnimals(Globals.MyAnimeCharacters);
+        await MyJSONService.SetAnimeCharacters(Globals.MyAnimeCharacters);
     }
 }
