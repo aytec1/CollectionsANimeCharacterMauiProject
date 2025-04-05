@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -83,18 +83,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\mat22\\net\\Project_net\\MyApp-main\\View\\MainView.xaml.cs",
-              "RelativeDocumentMoniker": "View\\MainView.xaml.cs",
-              "ToolTip": "C:\\Users\\mat22\\net\\Project_net\\MyApp-main\\View\\MainView.xaml.cs",
-              "RelativeToolTip": "View\\MainView.xaml.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T09:55:00.133Z"
             },
             {
               "$type": "Document",
@@ -142,8 +130,7 @@
               "RelativeToolTip": "ViewModel\\DetailsViewModel.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAkwEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T07:50:11.345Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T07:50:11.345Z"
             },
             {
               "$type": "Document",
@@ -156,6 +143,31 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-04-04T07:49:17.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GraphViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mat22\\net\\Project_net\\MyApp-main\\ViewModel\\GraphViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\GraphViewModel.cs",
+              "ToolTip": "C:\\Users\\mat22\\net\\Project_net\\MyApp-main\\ViewModel\\GraphViewModel.cs",
+              "RelativeToolTip": "ViewModel\\GraphViewModel.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAswEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T07:43:28.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\mat22\\net\\Project_net\\MyApp-main\\View\\MainView.xaml.cs",
+              "RelativeDocumentMoniker": "View\\MainView.xaml.cs",
+              "ToolTip": "C:\\Users\\mat22\\net\\Project_net\\MyApp-main\\View\\MainView.xaml.cs",
+              "RelativeToolTip": "View\\MainView.xaml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T09:55:00.133Z"
             },
             {
               "$type": "Document",
@@ -180,19 +192,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T07:44:04.883Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GraphViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\mat22\\net\\Project_net\\MyApp-main\\ViewModel\\GraphViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModel\\GraphViewModel.cs",
-              "ToolTip": "C:\\Users\\mat22\\net\\Project_net\\MyApp-main\\ViewModel\\GraphViewModel.cs",
-              "RelativeToolTip": "ViewModel\\GraphViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T07:43:28.017Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",

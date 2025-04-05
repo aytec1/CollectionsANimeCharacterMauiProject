@@ -4,8 +4,8 @@ using SkiaSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using MyApp.Model; // Pour accéder à AnimeCharacter
-using MyApp.Service; // Si tu as besoin de JSONServices
+using MyApp.Model;
+using MyApp.Service;
 using System.Threading.Tasks;
 
 namespace MyApp.ViewModel;
@@ -18,6 +18,9 @@ public partial class GraphViewModel : ObservableObject
     [ObservableProperty]
     public partial Chart MyObservableChart { get; set; } = new PieChart();
 
+    private readonly HashSet<string> usedColors = new();
+    private readonly Random rand = new();
+
     public GraphViewModel()
     {
         LoadPieChartFromCharacters();
@@ -25,19 +28,19 @@ public partial class GraphViewModel : ObservableObject
 
     private void LoadPieChartFromCharacters()
     {
-        // Récupère et regroupe les personnages par origine
+        usedColors.Clear(); // Nettoie pour éviter les restes entre 2 chargements
+
         var groupedByOrigin = Globals.MyAnimeCharacters
             .Where(c => !string.IsNullOrEmpty(c.Origin))
             .GroupBy(c => c.Origin)
             .Select(g => new { Origin = g.Key, Count = g.Count() })
             .ToList();
 
-        // Crée les entrées du graphique
         var entries = groupedByOrigin.Select(g => new ChartEntry(g.Count)
         {
             Label = g.Origin,
             ValueLabel = g.Count.ToString(),
-            Color = SKColor.Parse(GetRandomColorHex())
+            Color = SKColor.Parse(GetUniqueRandomColorHex())
         }).ToArray();
 
         MyObservableChart = new PieChart
@@ -48,14 +51,20 @@ public partial class GraphViewModel : ObservableObject
         };
     }
 
-    private string GetRandomColorHex()
+    private string GetUniqueRandomColorHex()
     {
-        Random rand = new Random();
-        return $"#{rand.Next(0x1000000):X6}";
+        string color;
+        do
+        {
+            color = $"#{rand.Next(0x1000000):X6}";
+        }
+        while (!usedColors.Add(color)); // Ajoute au HashSet, retourne false si déjà présent
+
+        return color;
     }
 
     internal void RefreshPage()
     {
-        LoadPieChartFromCharacters(); // Recharge les données si besoin
+        LoadPieChartFromCharacters();
     }
 }
