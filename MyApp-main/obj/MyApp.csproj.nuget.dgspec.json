@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jackb\\OneDrive\\Documents\\Document etudes HELB\\NET\\MyApp-main\\MyApp.csproj": {}
+    "C:\\Users\\mat22\\net\\Project_net\\MyApp-main\\MyApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jackb\\OneDrive\\Documents\\Document etudes HELB\\NET\\MyApp-main\\MyApp.csproj": {
+    "C:\\Users\\mat22\\net\\Project_net\\MyApp-main\\MyApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jackb\\OneDrive\\Documents\\Document etudes HELB\\NET\\MyApp-main\\MyApp.csproj",
+        "projectUniqueName": "C:\\Users\\mat22\\net\\Project_net\\MyApp-main\\MyApp.csproj",
         "projectName": "MyApp",
-        "projectPath": "C:\\Users\\jackb\\OneDrive\\Documents\\Document etudes HELB\\NET\\MyApp-main\\MyApp.csproj",
-        "packagesPath": "C:\\Users\\jackb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jackb\\OneDrive\\Documents\\Document etudes HELB\\NET\\MyApp-main\\obj\\",
+        "projectPath": "C:\\Users\\mat22\\net\\Project_net\\MyApp-main\\MyApp.csproj",
+        "packagesPath": "C:\\Users\\mat22\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mat22\\net\\Project_net\\MyApp-main\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jackb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mat22\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
