@@ -1012,3 +1012,7 @@ C:\Users\ayoub\Documents\Net3\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\wi
 C:\Users\ayoub\Documents\Net3\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\ayoub\Documents\Net3\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\ayoub\Documents\Net3\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\mat22\net\Project_net\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\ichigo.scale-100.png
+C:\Users\mat22\net\Project_net\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\naruto.scale-100.png
+C:\Users\mat22\net\Project_net\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\sasuke.scale-100.png
+C:\Users\mat22\net\Project_net\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\vegeta.scale-100.png

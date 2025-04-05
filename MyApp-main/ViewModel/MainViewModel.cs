@@ -104,29 +104,23 @@ public partial class MainViewModel : BaseViewModel
     {
         IsBusy = true;
 
-        Globals.MyAnimeCharacters = await MyCSVServices.LoadData();
+        Globals.MyAnimeCharacters = await MyCSVServices.LoadData(Globals.MyAnimeCharacters);
+
 
         IsBusy = false;
     }
 
     [RelayCommand]
-    internal async Task UploadJSON()
+    internal async Task CleanAndSave()
     {
         IsBusy = true;
 
-        if (Globals.MyAnimeCharacters.Count == 0)
-        {
-            Globals.MyAnimeCharacters.Add(new AnimeCharacter
-            {
-                Id = "1",
-                Name = "luffy",
-                Description = "Capitaine chapeau de paille",
-                Picture = "luffy.png",
-                SpecialAttack = "Gomu Gomu no Bazooka",
-                Sound = "luffy.mp3"
-            });
-        }
+        // Supprimer les personnages sans ID
+        Globals.MyAnimeCharacters = Globals.MyAnimeCharacters
+            .Where(c => !string.IsNullOrWhiteSpace(c.Id))
+            .ToList();
 
+        // Réécriture du JSON propre
         await MyJSONService.SetAnimeCharacters(Globals.MyAnimeCharacters);
 
         IsBusy = false;
