@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Maui.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Microsoft.Maui.ApplicationModel;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -8,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MyApp.Model;
-using MyApp.Service; 
+using MyApp.Service;
 
 namespace MyApp.ViewModel;
 
@@ -17,7 +18,28 @@ public partial class MainViewModel : BaseViewModel
     public ObservableCollection<AnimeCharacter> MyObservableList { get; } = [];
     JSONServices MyJSONService;
     CSVServices MyCSVServices;
-    DeviceOrientationService MyScanner; 
+    DeviceOrientationService MyScanner;
+    IDispatcherTimer Emulator = Application.Current.Dispatcher.CreateTimer();
+
+    [ObservableProperty]
+    private bool emulatorOnOff = false;
+
+    public bool isNavigating = false; // ✅ Pour éviter les redirections multiples
+    private bool hasScanned = false; // ✅ Pour éviter la répétition du même ID
+
+    partial void OnEmulatorOnOffChanged(bool value)
+    {
+        if (value)
+        {
+            System.Diagnostics.Debug.WriteLine("🚀 Emulateur activé");
+            Emulator.Start();
+        }
+        else
+        {
+            Emulator.Stop();
+            System.Diagnostics.Debug.WriteLine("🛑 Emulateur arrêté");
+        }
+    }
 
     public MainViewModel(JSONServices MyJSONService, CSVServices MyCSVServices, DeviceOrientationService myScanner)
     {
@@ -27,6 +49,21 @@ public partial class MainViewModel : BaseViewModel
 
         MyScanner.OpenPort();
         MyScanner.SerialBuffer.Changed += OnSerialDataReception;
+
+        // Dès qu’un vrai scanner est branché, on coupe l’émulateur
+        EmulatorOnOff = false;
+
+        Emulator.Interval = TimeSpan.FromSeconds(1);
+        Emulator.Tick += (s, e) => SimulateScan();
+    }
+
+    private void SimulateScan()
+    {
+        if (!hasScanned)
+        {
+            hasScanned = true;
+            MyScanner.SerialBuffer.Enqueue("4");
+        }
     }
 
     [RelayCommand]
@@ -77,7 +114,6 @@ public partial class MainViewModel : BaseViewModel
     {
         IsBusy = true;
 
-        // 🔥 Ajout temporaire d’un personnage si la liste est vide
         if (Globals.MyAnimeCharacters.Count == 0)
         {
             Globals.MyAnimeCharacters.Add(new AnimeCharacter
@@ -114,6 +150,14 @@ public partial class MainViewModel : BaseViewModel
 
     private async void OnSerialDataReception(object sender, EventArgs e)
     {
+        if (isNavigating) return; // ✅ Évite les appels multiples
+
+        // ✅ Dès qu’un vrai scan arrive, on arrête l’émulateur
+        if (EmulatorOnOff)
+        {
+            EmulatorOnOff = false;
+        }
+
         System.Diagnostics.Debug.WriteLine("🛰️ Donnée reçue dans le buffer.");
 
         if (MyScanner.SerialBuffer.Count > 0)
@@ -126,8 +170,15 @@ public partial class MainViewModel : BaseViewModel
                 var character = Globals.MyAnimeCharacters.FirstOrDefault(c => c.Id == scannedId);
                 if (character != null)
                 {
+                    isNavigating = true;
+                    hasScanned = false; // ✅ On autorise un nouveau scan plus tard
                     System.Diagnostics.Debug.WriteLine("✅ Personnage trouvé. Redirection...");
-                    await GoToDetails(scannedId);
+
+                    MainThread.BeginInvokeOnMainThread(async () =>
+                    {
+                        await GoToDetails(scannedId);
+                        isNavigating = false;
+                    });
                 }
                 else
                 {
@@ -140,5 +191,4 @@ public partial class MainViewModel : BaseViewModel
             }
         }
     }
-
 }

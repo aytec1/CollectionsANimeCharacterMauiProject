@@ -8,6 +8,14 @@
     <ScrollView>
      
         <VerticalStackLayout Spacing="20" Padding="20">
+            <HorizontalStackLayout Padding="10" Spacing="10">
+                <Label Text="Emulateur QR : " VerticalOptions="Center"/>
+                <Switch IsToggled="{Binding EmulatorOnOff}"
+                OnColor="Green"
+                ThumbColor="White"
+                VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+            
             <Button     Text="Add object"
                         Grid.Column="0"
                         HorizontalOptions="Start"

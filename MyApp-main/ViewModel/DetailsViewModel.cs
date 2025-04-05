@@ -35,9 +35,6 @@ public partial class DetailsViewModel : ObservableObject
     [ObservableProperty]
     public partial string? SerialBufferContent { get; set; }
 
-    [ObservableProperty]
-    public partial bool EmulatorON_OFF { get; set; } = false;
-
     public List<string> OriginsList { get; } = new() // 🆕 Liste pour le Picker
     {
         "One Piece",
@@ -48,42 +45,11 @@ public partial class DetailsViewModel : ObservableObject
         "Hunter x Hunter"
     };
 
-    readonly DeviceOrientationService MyScanner;
     readonly JSONServices MyJSONService;
-    IDispatcherTimer emulator = Application.Current.Dispatcher.CreateTimer();
 
-    public DetailsViewModel(DeviceOrientationService myScanner, JSONServices jsonService)
+    public DetailsViewModel(JSONServices jsonService)
     {
-        MyScanner = myScanner;
         MyJSONService = jsonService;
-
-        MyScanner.OpenPort();
-        myScanner.SerialBuffer.Changed += OnSerialDataReception;
-
-        emulator.Interval = TimeSpan.FromSeconds(1);
-        emulator.Tick += (s, e) => AddCode();
-    }
-
-    partial void OnEmulatorON_OFFChanged(bool value)
-    {
-        if (value) emulator.Start();
-        else emulator.Stop();
-    }
-
-    private void AddCode()
-    {
-        MyScanner.SerialBuffer.Enqueue("B");
-    }
-
-    private void OnSerialDataReception(object sender, EventArgs arg)
-    {
-        DeviceOrientationService.QueueBuffer MyLocalBuffer = (DeviceOrientationService.QueueBuffer)sender;
-
-        if (MyLocalBuffer.Count > 0)
-        {
-            SerialBufferContent += MyLocalBuffer.Dequeue().ToString();
-            OnPropertyChanged(nameof(SerialBufferContent));
-        }
     }
 
     internal void RefreshPage()
@@ -105,8 +71,7 @@ public partial class DetailsViewModel : ObservableObject
 
     internal void ClosePage()
     {
-        MyScanner.SerialBuffer.Changed -= OnSerialDataReception;
-        MyScanner.ClosePort();
+        // plus de port à fermer ici car plus de scanner ici
     }
 
     [RelayCommand]
