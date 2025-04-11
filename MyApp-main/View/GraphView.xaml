@@ -1,10 +1,21 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
-             xmlns:micro="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
-             x:Class="MyApp.View.GraphView"
-             Title="GraphView">
-    <Grid>
-        <micro:ChartView Chart="{Binding MyObservableChart}"/>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:micro="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
+    x:Class="MyApp.View.GraphView"
+    Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="Auto,*">
+
+        <Label Text="Répartition des personnages par Anime"
+               FontSize="30"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               TextColor="DarkRed"
+               Margin="0,20,0,10" />
+
+
+        <micro:ChartView Grid.Row="1" Chart="{Binding MyObservableChart}" />
     </Grid>
 </ContentPage>

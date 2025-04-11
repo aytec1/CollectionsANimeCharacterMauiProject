@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uHOr8b3Cbjc=",
+  "dgSpecHash": "ZRXzKSI6p3s=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mat22\\net\\Project_net\\MyApp-main\\MyApp.csproj",
+  "projectFilePath": "C:\\Users\\mat22\\Documents\\HELB_BAC2\\Q4\\net\\AnimeCharacterCollections_O.AyoubL.Mattias1.0\\MyApp-main\\MyApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mat22\\.nuget\\packages\\communitytoolkit.maui\\11.1.0\\communitytoolkit.maui.11.1.0.nupkg.sha512",
     "C:\\Users\\mat22\\.nuget\\packages\\communitytoolkit.maui.core\\11.1.0\\communitytoolkit.maui.core.11.1.0.nupkg.sha512",
@@ -30,7 +30,7 @@
     "C:\\Users\\mat22\\.nuget\\packages\\microsoft.maui.graphics\\9.0.40\\microsoft.maui.graphics.9.0.40.nupkg.sha512",
     "C:\\Users\\mat22\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\9.0.40\\microsoft.maui.graphics.win2d.winui.desktop.9.0.40.nupkg.sha512",
     "C:\\Users\\mat22\\.nuget\\packages\\microsoft.maui.resizetizer\\9.0.40\\microsoft.maui.resizetizer.9.0.40.nupkg.sha512",
-    "C:\\Users\\mat22\\.nuget\\packages\\microsoft.net.illink.tasks\\9.0.2\\microsoft.net.illink.tasks.9.0.2.nupkg.sha512",
+    "C:\\Users\\mat22\\.nuget\\packages\\microsoft.net.illink.tasks\\9.0.3\\microsoft.net.illink.tasks.9.0.3.nupkg.sha512",
     "C:\\Users\\mat22\\.nuget\\packages\\microsoft.web.webview2\\1.0.2792.45\\microsoft.web.webview2.1.0.2792.45.nupkg.sha512",
     "C:\\Users\\mat22\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
     "C:\\Users\\mat22\\.nuget\\packages\\microsoft.windowsappsdk\\1.6.250108002\\microsoft.windowsappsdk.1.6.250108002.nupkg.sha512",

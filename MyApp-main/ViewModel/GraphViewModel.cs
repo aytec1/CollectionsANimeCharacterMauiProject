@@ -39,16 +39,21 @@ public partial class GraphViewModel : ObservableObject
         var entries = groupedByOrigin.Select(g => new ChartEntry(g.Count)
         {
             Label = g.Origin,
-            ValueLabel = g.Count.ToString(),
-            Color = SKColor.Parse(GetUniqueRandomColorHex())
+            ValueLabel = $"{g.Count} personnages",
+            Color = SKColor.Parse(GetUniqueRandomColorHex()),
+            ValueLabelColor = SKColors.White,
+            TextColor = SKColors.White
         }).ToArray();
 
-        MyObservableChart = new PieChart
+
+        MyObservableChart = new RadarChart
         {
             Entries = entries,
             LabelTextSize = 35,
-            BackgroundColor = SKColors.Transparent
+            BackgroundColor = SKColors.Transparent,
+            MinValue = 0
         };
+
     }
 
     private string GetUniqueRandomColorHex()

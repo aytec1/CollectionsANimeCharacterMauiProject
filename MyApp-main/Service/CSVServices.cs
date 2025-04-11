@@ -28,6 +28,20 @@ public class CSVServices
             var headers = lines[0].Split(';');
             var properties = typeof(AnimeCharacter).GetProperties();
 
+            var headerList = headers.Select(h => h.Trim()).ToList();
+            var modelProperties = typeof(AnimeCharacter).GetProperties().Select(p => p.Name).ToList();
+
+            var invalidHeaders = headerList.Where(h => !modelProperties.Contains(h, StringComparer.OrdinalIgnoreCase)).ToList();
+
+            if (invalidHeaders.Any())
+            {
+                await Shell.Current.DisplayAlert("Erreur CSV",
+                    "Le fichier contient des colonnes non reconnues : " + string.Join(", ", invalidHeaders),
+                    "OK");
+                return existingData;
+            }
+
+
             for (int i = 1; i < lines.Length; i++)
             {
                 var values = lines[i].Split(';');
