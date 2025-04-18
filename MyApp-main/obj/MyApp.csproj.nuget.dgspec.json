@@ -97,6 +97,10 @@
               "version": "[9.0.3, )",
               "autoReferenced": true
             },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
             "System.IO.Ports": {
               "target": "Package",
               "version": "[9.0.2, )"
@@ -159,6 +163,10 @@
               "target": "Package",
               "version": "[9.0.3, )",
               "autoReferenced": true
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.3.0, )"
             },
             "System.IO.Ports": {
               "target": "Package",
@@ -223,6 +231,10 @@
               "version": "[9.0.3, )",
               "autoReferenced": true
             },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
             "System.IO.Ports": {
               "target": "Package",
               "version": "[9.0.2, )"
@@ -280,6 +292,10 @@
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
               "version": "[9.0.40, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.3.0, )"
             },
             "System.IO.Ports": {
               "target": "Package",

@@ -205,3 +205,9 @@ C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mat
 C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\DnsClient.dll
+C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\MongoDB.Bson.dll
+C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\MongoDB.Driver.dll
+C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\SharpCompress.dll
+C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Snappier.dll
+C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\ZstdSharp.dll
