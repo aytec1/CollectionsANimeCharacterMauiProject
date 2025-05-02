@@ -10,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using MyApp.Model;
 using MyApp.Service;
+using MongoDB.Driver;
+
 
 namespace MyApp.ViewModel;
 
@@ -78,6 +80,16 @@ public partial class MainViewModel : BaseViewModel
 
         IsBusy = false;
     }
+
+    MongoUserService mongoService = new MongoUserService();
+
+    [RelayCommand]
+    async Task GoToUserCreation()
+    {
+        await Shell.Current.GoToAsync("UserCreationView");
+    }
+
+
 
     [RelayCommand]
     internal async Task GoToGraph()

@@ -63,6 +63,8 @@
                             Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=UploadJSONCommand}"
                             IsEnabled="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=IsNotBusy}">
                 </Button>
+                <Button Text="Add User" 
+                        Command="{Binding GoToUserCreationCommand}" />
             </HorizontalStackLayout>
 
             <CollectionView ItemsSource="{Binding MyObservableList}"

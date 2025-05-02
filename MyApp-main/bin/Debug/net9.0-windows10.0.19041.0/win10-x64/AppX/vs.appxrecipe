@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>PORTABLE_MATT</Machine>
+    <Machine>DESKTOP-OIV7EPB</Machine>
     <WindowsUser>mat22</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>com.companyname.myapp</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>
     </WindowsSdkPath>
-    <LayoutDir>C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <LayoutDir>D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
     <RegisteredManifestChecksum>4C802EC60428EF0E9DE33362E40F8CCBBE1FA9B38A6F747D802094BD02159B23</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>com.companyname.myapp_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>com.companyname.myapp_9zz4h110yvjzm!App</RegisteredUserModeAppID>
@@ -27,304 +27,304 @@
     <RegisteredVersion>1.0.0.1</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-04-18T10:13:01.954</Modified>
+      <Modified>2025-05-02T16:54:37.108</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-04-18T10:09:03.026</Modified>
+      <Modified>2025-05-02T16:17:09.571</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\MyApp.runtimeconfig.json">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\MyApp.runtimeconfig.json">
       <PackagePath>MyApp.runtimeconfig.json</PackagePath>
-      <Modified>2025-04-18T10:09:02.722</Modified>
+      <Modified>2025-05-02T13:33:05.064</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\MyApp.dll">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\MyApp.dll">
       <PackagePath>MyApp.dll</PackagePath>
-      <Modified>2025-04-18T10:13:01.668</Modified>
+      <Modified>2025-05-02T16:54:35.835</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MyApp.exe</PackagePath>
-      <Modified>2025-04-18T10:13:01.671</Modified>
+      <Modified>2025-05-02T16:54:35.873</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2025-04-11T07:08:02.312</Modified>
+      <Modified>2025-04-28T13:57:58.565</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2025-04-11T07:09:52.647</Modified>
+      <Modified>2025-05-02T12:38:31.221</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2025-04-11T07:09:52.672</Modified>
+      <Modified>2025-05-02T12:38:31.233</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2025-04-11T07:09:52.705</Modified>
+      <Modified>2025-05-02T12:38:31.249</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2025-04-11T07:09:52.746</Modified>
+      <Modified>2025-05-02T12:38:31.273</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2025-04-11T07:09:52.919</Modified>
+      <Modified>2025-05-02T12:38:31.364</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2025-04-11T07:08:01.621</Modified>
+      <Modified>2025-04-28T13:58:01.307</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-      <Modified>2025-04-11T07:08:01.695</Modified>
+      <Modified>2025-04-28T13:58:01.308</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2025-04-11T07:09:54.324</Modified>
+      <Modified>2025-05-02T12:38:31.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.308</Modified>
+      <Modified>2025-05-02T12:38:31.419</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.308</Modified>
+      <Modified>2025-05-02T12:38:31.419</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.308</Modified>
+      <Modified>2025-05-02T12:38:31.419</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.308</Modified>
+      <Modified>2025-05-02T12:38:31.419</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.299</Modified>
+      <Modified>2025-05-02T12:38:31.419</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.316</Modified>
+      <Modified>2025-05-02T12:38:31.421</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.316</Modified>
+      <Modified>2025-05-02T12:38:31.421</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.316</Modified>
+      <Modified>2025-05-02T12:38:31.421</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.316</Modified>
+      <Modified>2025-05-02T12:38:31.421</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.316</Modified>
+      <Modified>2025-05-02T12:38:31.421</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.324</Modified>
+      <Modified>2025-05-02T12:38:31.421</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.324</Modified>
+      <Modified>2025-05-02T12:38:31.421</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.324</Modified>
+      <Modified>2025-05-02T12:38:31.421</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.324</Modified>
+      <Modified>2025-05-02T12:38:31.421</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.324</Modified>
+      <Modified>2025-05-02T12:38:31.421</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.324</Modified>
+      <Modified>2025-05-02T12:38:31.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.324</Modified>
+      <Modified>2025-05-02T12:38:31.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.324</Modified>
+      <Modified>2025-05-02T12:38:31.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.324</Modified>
+      <Modified>2025-05-02T12:38:31.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.324</Modified>
+      <Modified>2025-05-02T12:38:31.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.324</Modified>
+      <Modified>2025-05-02T12:38:31.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.324</Modified>
+      <Modified>2025-05-02T12:38:31.421</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.324</Modified>
+      <Modified>2025-05-02T12:38:31.421</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.324</Modified>
+      <Modified>2025-05-02T12:38:31.421</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.324</Modified>
+      <Modified>2025-05-02T12:38:31.421</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.308</Modified>
+      <Modified>2025-05-02T12:38:31.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.308</Modified>
+      <Modified>2025-05-02T12:38:31.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.308</Modified>
+      <Modified>2025-05-02T12:38:31.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.308</Modified>
+      <Modified>2025-05-02T12:38:31.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.308</Modified>
+      <Modified>2025-05-02T12:38:31.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.316</Modified>
+      <Modified>2025-05-02T12:38:31.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.316</Modified>
+      <Modified>2025-05-02T12:38:31.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.316</Modified>
+      <Modified>2025-05-02T12:38:31.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.308</Modified>
+      <Modified>2025-05-02T12:38:31.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.308</Modified>
+      <Modified>2025-05-02T12:38:31.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.316</Modified>
+      <Modified>2025-05-02T12:38:31.421</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.316</Modified>
+      <Modified>2025-05-02T12:38:31.421</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.316</Modified>
+      <Modified>2025-05-02T12:38:31.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.316</Modified>
+      <Modified>2025-05-02T12:38:31.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.316</Modified>
+      <Modified>2025-05-02T12:38:31.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.308</Modified>
+      <Modified>2025-05-02T12:38:31.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.308</Modified>
+      <Modified>2025-05-02T12:38:31.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.308</Modified>
+      <Modified>2025-05-02T12:38:31.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.308</Modified>
+      <Modified>2025-05-02T12:38:31.419</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.308</Modified>
+      <Modified>2025-05-02T12:38:31.419</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\boa.scale-100.jpg">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\boa.scale-100.jpg">
       <PackagePath>boa.scale-100.jpg</PackagePath>
-      <Modified>2025-04-11T07:09:54.299</Modified>
+      <Modified>2025-05-02T12:38:31.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\cobra.scale-100.jpg">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\cobra.scale-100.jpg">
       <PackagePath>cobra.scale-100.jpg</PackagePath>
-      <Modified>2025-04-11T07:09:54.299</Modified>
+      <Modified>2025-05-02T12:38:31.423</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.332</Modified>
+      <Modified>2025-05-02T12:38:31.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.332</Modified>
+      <Modified>2025-05-02T12:38:31.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.332</Modified>
+      <Modified>2025-05-02T12:38:31.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.332</Modified>
+      <Modified>2025-05-02T12:38:31.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.324</Modified>
+      <Modified>2025-05-02T12:38:31.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\goku.scale-100.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\goku.scale-100.png">
       <PackagePath>goku.scale-100.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.299</Modified>
+      <Modified>2025-05-02T12:38:31.423</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\ichigo.scale-100.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\ichigo.scale-100.png">
       <PackagePath>ichigo.scale-100.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.299</Modified>
+      <Modified>2025-05-02T12:38:31.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\luffy.scale-100.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\luffy.scale-100.png">
       <PackagePath>luffy.scale-100.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.299</Modified>
+      <Modified>2025-05-02T12:38:31.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\myg.scale-100.jpg">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\myg.scale-100.jpg">
       <PackagePath>myg.scale-100.jpg</PackagePath>
-      <Modified>2025-04-11T07:09:54.299</Modified>
+      <Modified>2025-05-02T12:38:31.423</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\naruto.scale-100.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\naruto.scale-100.png">
       <PackagePath>naruto.scale-100.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.299</Modified>
+      <Modified>2025-05-02T12:38:31.423</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\sasuke.scale-100.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\sasuke.scale-100.png">
       <PackagePath>sasuke.scale-100.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.299</Modified>
+      <Modified>2025-05-02T12:38:31.423</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\scorpion.scale-100.jpg">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\scorpion.scale-100.jpg">
       <PackagePath>scorpion.scale-100.jpg</PackagePath>
-      <Modified>2025-04-11T07:09:54.299</Modified>
+      <Modified>2025-05-02T12:38:31.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\vegeta.scale-100.png">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\vegeta.scale-100.png">
       <PackagePath>vegeta.scale-100.png</PackagePath>
-      <Modified>2025-04-11T07:09:54.299</Modified>
+      <Modified>2025-05-02T12:38:31.423</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mat22\.nuget\packages\microsoft.web.webview2\1.0.2792.45\runtimes\win-x64\native\WebView2Loader.dll">
       <PackagePath>runtimes\win-x64\native\WebView2Loader.dll</PackagePath>
@@ -706,9 +706,9 @@
       <PackagePath>Microsoft.Web.WebView2.Core.Projection.dll</PackagePath>
       <Modified>2024-09-15T09:07:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\MyApp.deps.json">
+    <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\MyApp.deps.json">
       <PackagePath>MyApp.deps.json</PackagePath>
-      <Modified>2025-04-18T10:09:02.613</Modified>
+      <Modified>2025-05-02T16:17:09.355</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mat22\.nuget\packages\microsoft.maui.controls.compatibility\9.0.40\lib\net9.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

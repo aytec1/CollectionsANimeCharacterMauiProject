@@ -1,1 +1,1 @@
-C:\Users\mat22\Documents\HELB_BAC2\Q4\net\AnimeCharacterCollections_O.AyoubL.Mattias1.0\MyApp-main\MyApp.csproj;x64
+D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\MyApp.csproj;x64
