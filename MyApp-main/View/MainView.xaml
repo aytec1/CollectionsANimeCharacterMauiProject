@@ -65,6 +65,11 @@
                 </Button>
                 <Button Text="Add User" 
                         Command="{Binding GoToUserCreationCommand}" />
+                <Button Text="Voir utilisateurs"
+                        Command="{Binding GoToUserListCommand}" />
+                <Button Text="Connexion"
+                        Command="{Binding GoToLoginCommand}"
+                        IsEnabled="{Binding IsNotBusy}" />
             </HorizontalStackLayout>
 
             <CollectionView ItemsSource="{Binding MyObservableList}"

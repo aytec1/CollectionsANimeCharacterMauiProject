@@ -12,4 +12,10 @@
         ContentTemplate="{DataTemplate local:MainView}"
         Route="MainView" />
 
+    <ShellContent
+    Title="Login"
+    ContentTemplate="{DataTemplate local:LoginView}"
+    Route="LoginView"
+    IsVisible="False" />
+
 </Shell>

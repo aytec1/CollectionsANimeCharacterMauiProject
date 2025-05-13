@@ -25,4 +25,15 @@ public partial class MainView : ContentPage
 
         this.ShowPopup(popup);
     }
+
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+
+        if (Globals.CurrentUser == null)
+        {
+            Shell.Current.GoToAsync("//LoginView");
+        }
+    }
+
 }

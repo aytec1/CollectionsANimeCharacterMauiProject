@@ -1,6 +1,6 @@
 using CommunityToolkit.Maui.Views;
 
-namespace MyApp.Views;
+namespace MyApp.View;
 
 public partial class UserCreationView : ContentPage
 {

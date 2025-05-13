@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:MyApp.ViewModel"
+             x:Class="MyApp.View.LoginView"
+             x:DataType="viewmodel:LoginViewModel">
+
+    <VerticalStackLayout Padding="30" Spacing="20">
+        <Label Text="Connexion utilisateur" FontSize="24" HorizontalOptions="Center" />
+
+        <Entry Placeholder="Email"
+               Text="{Binding Email}" />
+
+        <Entry Placeholder="Mot de passe"
+               Text="{Binding Password}"
+               IsPassword="True" />
+
+        <Button Text="Se connecter"
+                Command="{Binding LoginCommand}" />
+
+        <Label Text="{Binding ErrorMessage}" TextColor="Red" IsVisible="{Binding HasError}" />
+    </VerticalStackLayout>
+</ContentPage>

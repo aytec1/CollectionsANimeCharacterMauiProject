@@ -1,0 +1,27 @@
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodel="clr-namespace:MyApp.ViewModel"
+    xmlns:model="clr-namespace:MyApp.Model"
+    x:Class="MyApp.View.UserListView"
+    x:DataType="viewmodel:UserListViewModel">
+
+    <VerticalStackLayout Padding="20">
+        <Label Text="Liste des utilisateurs" FontSize="24" />
+
+        <CollectionView ItemsSource="{Binding Users}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:User">
+                    <Border Padding="10" StrokeThickness="1">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding FirstName}" FontAttributes="Bold" />
+                            <Label Text="{Binding LastName}" FontAttributes="Bold" />
+                            <Label Text="{Binding Email}" />
+                            <Label Text="{Binding Role}" FontSize="12" TextColor="Gray" />
+                        </VerticalStackLayout>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

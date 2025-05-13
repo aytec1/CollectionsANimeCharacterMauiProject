@@ -81,7 +81,6 @@ public partial class MainViewModel : BaseViewModel
         IsBusy = false;
     }
 
-    MongoUserService mongoService = new MongoUserService();
 
     [RelayCommand]
     async Task GoToUserCreation()
@@ -197,4 +196,17 @@ public partial class MainViewModel : BaseViewModel
             }
         }
     }
+
+    [RelayCommand]
+    async Task GoToUserList()
+    {
+        await Shell.Current.GoToAsync("UserListView");
+    }
+
+    [RelayCommand]
+    async Task GoToLogin()
+    {
+        await Shell.Current.GoToAsync("LoginView");
+    }
+
 }

@@ -36,6 +36,17 @@ namespace MyApp
             builder.Services.AddSingleton<DeviceOrientationService>();
             builder.Services.AddSingleton<JSONServices>();
             builder.Services.AddSingleton<CSVServices>();
+            builder.Services.AddSingleton<MongoUserService>();
+
+
+            builder.Services.AddSingleton<UserListViewModel>();
+            builder.Services.AddSingleton<UserListView>();
+
+            builder.Services.AddSingleton<UserCreationViewModel>();
+            builder.Services.AddSingleton<UserCreationView>();
+
+            builder.Services.AddSingleton<LoginView>();
+            builder.Services.AddSingleton<LoginViewModel>();
 
             return builder.Build();
         }

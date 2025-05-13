@@ -1,5 +1,5 @@
 ﻿using MyApp.View;
-using MyApp.Views;
+
 
 namespace MyApp
 {
@@ -11,6 +11,9 @@ namespace MyApp
             Routing.RegisterRoute(nameof(DetailsView), typeof(DetailsView));
             Routing.RegisterRoute(nameof(GraphView), typeof(GraphView));
             Routing.RegisterRoute(nameof(UserCreationView), typeof(UserCreationView));
+            Routing.RegisterRoute(nameof(UserListView), typeof(UserListView));
+            Routing.RegisterRoute(nameof(LoginView), typeof(LoginView));
+            Routing.RegisterRoute(nameof(MainView), typeof(MainView));
         }
     }
 }

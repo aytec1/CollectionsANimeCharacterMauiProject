@@ -16,4 +16,5 @@ global using CommunityToolkit.Maui;
 public class Globals
 {
     public static List<AnimeCharacter> MyAnimeCharacters = new();
+    public static User? CurrentUser = null;
 }
