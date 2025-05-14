@@ -19,12 +19,6 @@ public partial class MainView : ContentPage
 		await viewModel.RefreshPage();    
 		BindingContext = viewModel;
 	}
-    public void DisplayPopup(object? sender, EventArgs e) 
-    {
-        var popup = new SimplePopup();
-
-        this.ShowPopup(popup);
-    }
 
     protected override void OnAppearing()
     {

@@ -25,7 +25,7 @@
                         IsEnabled="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=IsNotBusy}">
             </Button>
             <HorizontalStackLayout Spacing="10">
-                <Button     Text="Export to CSV"
+                <Button     Text="Télécharger les personnages"
                             Grid.Column="0"
                             HorizontalOptions="Start"
                             HeightRequest="50"
@@ -33,7 +33,7 @@
                             CommandParameter="0"
                             IsEnabled="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=IsNotBusy}">
                 </Button>
-                <Button     Text="Load from CSV"
+                <Button     Text="Charger les personnages"
                             Grid.Column="0"
                             HorizontalOptions="Start"
                             HeightRequest="50"
@@ -41,7 +41,7 @@
                             CommandParameter="0"
                             IsEnabled="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=IsNotBusy}">
                 </Button>
-                <Button     Text="Graph"
+                <Button     Text="Graphique"
                             Grid.Column="0"
                             HorizontalOptions="Start"
                             HeightRequest="50"
@@ -49,21 +49,14 @@
                             CommandParameter="0"
                             IsEnabled="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=IsNotBusy}">
                 </Button>
-                <Button     Text="Pop"
-                            Grid.Column="0"
-                            HorizontalOptions="Start"
-                            HeightRequest="50"
-                            Clicked="DisplayPopup"
-                            IsEnabled="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=IsNotBusy}">
-                </Button>
-                <Button     Text="Upload JSON"
+                <Button     Text="Charger la collection"
                             Grid.Column="0"
                             HorizontalOptions="Start"
                             HeightRequest="50"
                             Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=UploadJSONCommand}"
                             IsEnabled="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=IsNotBusy}">
                 </Button>
-                <Button Text="Add User" 
+                <Button Text="Ajouter un utilisateur" 
                         Command="{Binding GoToUserCreationCommand}" />
                 <Button Text="Voir utilisateurs"
                         Command="{Binding GoToUserListCommand}" />
