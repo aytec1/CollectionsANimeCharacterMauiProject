@@ -71,6 +71,7 @@
                     Command="{Binding ChangeObjectParametersCommand}"
                     Clicked="MyAnimatedButton_Clicked"
                     IsEnabled="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:BaseViewModel}}, Path= IsNotBusy}"/>
+            
 
         </Grid>
 

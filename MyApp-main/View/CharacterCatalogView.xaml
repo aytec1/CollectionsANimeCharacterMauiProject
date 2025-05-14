@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel="clr-namespace:MyApp.ViewModel"
+             x:Class="MyApp.View.CharacterCatalogView"
+             Title="Catalogue">
+
+    <ContentPage.BindingContext>
+        <viewModel:CharacterCatalogViewModel />
+    </ContentPage.BindingContext>
+
+
+    <CollectionView ItemsSource="{Binding AllCharacters}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <StackLayout Padding="10">
+                    <Label Text="{Binding Name}" FontAttributes="Bold"/>
+                    <Label Text="{Binding Origin}" FontSize="12"/>
+                    <Button Text="Ajouter à ma collection"
+                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewModel:CharacterCatalogViewModel}}, Path=AddToUserCollectionCommand}"
+                            CommandParameter="{Binding .}" />
+                </StackLayout>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</ContentPage>
+

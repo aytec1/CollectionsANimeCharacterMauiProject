@@ -18,4 +18,6 @@
     Route="LoginView"
     IsVisible="False" />
 
+    <ShellContent Route="CharacterCatalogView" ContentTemplate="{DataTemplate local:CharacterCatalogView}" />
+
 </Shell>

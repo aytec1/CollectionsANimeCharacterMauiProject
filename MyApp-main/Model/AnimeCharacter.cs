@@ -15,5 +15,6 @@ namespace MyApp.Model
         public string SpecialAttack { get; set; } = string.Empty; 
         public string Sound { get; set; } = string.Empty;
         public string Origin { get; set; } = string.Empty;
+        public string UserId { get; set; } = string.Empty;
     }
 }

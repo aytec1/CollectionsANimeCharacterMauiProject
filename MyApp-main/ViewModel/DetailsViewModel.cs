@@ -100,11 +100,14 @@ public partial class DetailsViewModel : ObservableObject
                 Picture = Picture ?? string.Empty,
                 Sound = Sound ?? string.Empty,
                 SpecialAttack = SpecialAttack ?? string.Empty,
-                Origin = Origin ?? string.Empty
+                Origin = Origin ?? string.Empty,
+                UserId = Globals.CurrentUser.Id.ToString()
             });
         }
 
         //  Sauvegarde dans le JSON distant
         await MyJSONService.SetAnimeCharacters(Globals.MyAnimeCharacters);
     }
+
+
 }

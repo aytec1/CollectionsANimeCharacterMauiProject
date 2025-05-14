@@ -71,16 +71,24 @@ public partial class MainViewModel : BaseViewModel
     [RelayCommand]
     internal async Task GoToDetails(string id)
     {
+        if (Globals.CurrentUser == null || Globals.CurrentUser.Role?.ToLower() != "admin")
+        {
+            await Shell.Current.DisplayAlert(
+                "Accès refusé",
+                "Seuls les utilisateurs ayant le rôle 'admin' peuvent ajouter un objet.",
+                "OK");
+            return;
+        }
+
         IsBusy = true;
 
         await Shell.Current.GoToAsync("DetailsView", true, new Dictionary<string, object>
-        {
-            {"selectedAnimal", id}
-        });
+    {
+        {"selectedAnimal", id}
+    });
 
         IsBusy = false;
     }
-
 
     [RelayCommand]
     async Task GoToUserCreation()
@@ -141,17 +149,26 @@ public partial class MainViewModel : BaseViewModel
     {
         MyObservableList.Clear();
 
+        if (Globals.CurrentUser == null)
+        {
+            await Shell.Current.GoToAsync("LoginView");
+            return;
+        }
+
         if (Globals.MyAnimeCharacters.Count == 0)
             Globals.MyAnimeCharacters = await MyJSONService.GetAnimeCharacters();
 
-        foreach (var item in Globals.MyAnimeCharacters)
+        // 🔽 Filtrer les personnages de l’utilisateur courant
+        foreach (var item in Globals.MyAnimeCharacters
+                     .Where(c => c.UserId == Globals.CurrentUser.Id.ToString()))
         {
             MyObservableList.Add(item);
         }
-        var result = await MyJSONService.GetAnimeCharacters();
 
-        System.Diagnostics.Debug.WriteLine("Résultat JSON récupéré : " + result.Count);
+        System.Diagnostics.Debug.WriteLine("✅ Liste filtrée : " + MyObservableList.Count);
     }
+
+
 
     private async void OnSerialDataReception(object sender, EventArgs e)
     {
@@ -208,5 +225,12 @@ public partial class MainViewModel : BaseViewModel
     {
         await Shell.Current.GoToAsync("LoginView");
     }
+
+    [RelayCommand]
+    async Task GoToCharacterCatalog()
+    {
+        await Shell.Current.GoToAsync("CharacterCatalogView");
+    }
+
 
 }

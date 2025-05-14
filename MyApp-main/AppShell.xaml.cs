@@ -13,6 +13,7 @@ namespace MyApp
             Routing.RegisterRoute(nameof(UserCreationView), typeof(UserCreationView));
             Routing.RegisterRoute(nameof(UserListView), typeof(UserListView));
             Routing.RegisterRoute(nameof(LoginView), typeof(LoginView));
+            Routing.RegisterRoute(nameof(CharacterCatalogView), typeof(CharacterCatalogView));
             Routing.RegisterRoute(nameof(MainView), typeof(MainView));
         }
     }

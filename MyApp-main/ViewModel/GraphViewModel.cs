@@ -72,4 +72,6 @@ public partial class GraphViewModel : ObservableObject
     {
         LoadPieChartFromCharacters();
     }
+
+
 }
