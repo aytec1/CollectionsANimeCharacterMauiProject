@@ -2,6 +2,7 @@
 using Microcharts.Maui;
 using Microsoft.Extensions.Logging;
 using System.Xml;
+using Plugin.Maui.Audio;
 
 namespace MyApp
 {
@@ -47,6 +48,8 @@ namespace MyApp
 
             builder.Services.AddSingleton<LoginView>();
             builder.Services.AddSingleton<LoginViewModel>();
+
+            builder.Services.AddSingleton(AudioManager.Current);
 
             return builder.Build();
         }

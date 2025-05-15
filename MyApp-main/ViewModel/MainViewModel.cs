@@ -75,7 +75,7 @@ public partial class MainViewModel : BaseViewModel
         {
             await Shell.Current.DisplayAlert(
                 "Accès refusé",
-                "Seuls les utilisateurs ayant le rôle 'admin' peuvent ajouter un objet.",
+                "Seuls les admins ont accès à cette fonctionalité.",
                 "OK");
             return;
         }
@@ -232,5 +232,13 @@ public partial class MainViewModel : BaseViewModel
         await Shell.Current.GoToAsync("CharacterCatalogView");
     }
 
+    [RelayCommand]
+    async Task GoToCharacterPreview(string id)
+    {
+        await Shell.Current.GoToAsync(nameof(CharacterPreviewView), true, new Dictionary<string, object>
+    {
+        { "selectedCharacter", id }
+    });
+    }
 
 }

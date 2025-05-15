@@ -15,6 +15,7 @@ namespace MyApp
             Routing.RegisterRoute(nameof(LoginView), typeof(LoginView));
             Routing.RegisterRoute(nameof(CharacterCatalogView), typeof(CharacterCatalogView));
             Routing.RegisterRoute(nameof(MainView), typeof(MainView));
+            Routing.RegisterRoute(nameof(CharacterPreviewView), typeof(CharacterPreviewView));
         }
     }
 }

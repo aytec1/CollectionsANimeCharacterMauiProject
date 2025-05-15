@@ -524,7 +524,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.4": {
+      "Microsoft.NET.ILLink.Tasks/9.0.3": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -598,6 +598,22 @@
         },
         "runtime": {
           "lib/net6.0/MongoDB.Driver.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
             "related": ".xml"
           }
         }
@@ -4419,7 +4435,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.4": {
+      "Microsoft.NET.ILLink.Tasks/9.0.3": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -4487,6 +4503,22 @@
         },
         "runtime": {
           "lib/net6.0/MongoDB.Driver.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
             "related": ".xml"
           }
         }
@@ -7253,7 +7285,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.4": {
+      "Microsoft.NET.ILLink.Tasks/9.0.3": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -7321,6 +7353,22 @@
         },
         "runtime": {
           "lib/net6.0/MongoDB.Driver.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
             "related": ".xml"
           }
         }
@@ -10087,7 +10135,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.4": {
+      "Microsoft.NET.ILLink.Tasks/9.0.3": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -10155,6 +10203,22 @@
         },
         "runtime": {
           "lib/net6.0/MongoDB.Driver.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
             "related": ".xml"
           }
         }
@@ -12870,7 +12934,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.4": {
+      "Microsoft.NET.ILLink.Tasks/9.0.3": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -12938,6 +13002,22 @@
         },
         "runtime": {
           "lib/net6.0/MongoDB.Driver.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
             "related": ".xml"
           }
         }
@@ -15701,7 +15781,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.4": {
+      "Microsoft.NET.ILLink.Tasks/9.0.3": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -15769,6 +15849,22 @@
         },
         "runtime": {
           "lib/net6.0/MongoDB.Driver.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0-android35.0/Plugin.Maui.Audio.dll": {
             "related": ".xml"
           }
         }
@@ -18454,7 +18550,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.4": {
+      "Microsoft.NET.ILLink.Tasks/9.0.3": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -18529,6 +18625,18 @@
           "lib/net6.0/MongoDB.Driver.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.android-arm.runtime.native.System.IO.Ports/9.0.2": {
@@ -20431,7 +20539,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.4": {
+      "Microsoft.NET.ILLink.Tasks/9.0.3": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -20500,6 +20608,18 @@
           "lib/net6.0/MongoDB.Driver.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.android-arm.runtime.native.System.IO.Ports/9.0.2": {
@@ -21344,7 +21464,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.4": {
+      "Microsoft.NET.ILLink.Tasks/9.0.3": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -21413,6 +21533,18 @@
           "lib/net6.0/MongoDB.Driver.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.android-arm.runtime.native.System.IO.Ports/9.0.2": {
@@ -22257,7 +22389,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.4": {
+      "Microsoft.NET.ILLink.Tasks/9.0.3": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -22326,6 +22458,18 @@
           "lib/net6.0/MongoDB.Driver.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.android-arm.runtime.native.System.IO.Ports/9.0.2": {
@@ -23128,7 +23272,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.4": {
+      "Microsoft.NET.ILLink.Tasks/9.0.3": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -23197,6 +23341,18 @@
           "lib/net6.0/MongoDB.Driver.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.android-arm.runtime.native.System.IO.Ports/9.0.2": {
@@ -24047,7 +24203,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.4": {
+      "Microsoft.NET.ILLink.Tasks/9.0.3": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -24116,6 +24272,18 @@
           "lib/net6.0/MongoDB.Driver.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.android-arm.runtime.native.System.IO.Ports/9.0.2": {
@@ -24912,7 +25080,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.4": {
+      "Microsoft.NET.ILLink.Tasks/9.0.3": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -24987,6 +25155,18 @@
           "lib/net6.0/MongoDB.Driver.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.android-arm.runtime.native.System.IO.Ports/9.0.2": {
@@ -26877,7 +27057,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.4": {
+      "Microsoft.NET.ILLink.Tasks/9.0.3": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -26946,6 +27126,18 @@
           "lib/net6.0/MongoDB.Driver.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.android-arm.runtime.native.System.IO.Ports/9.0.2": {
@@ -27790,7 +27982,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.4": {
+      "Microsoft.NET.ILLink.Tasks/9.0.3": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -27859,6 +28051,18 @@
           "lib/net6.0/MongoDB.Driver.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.android-arm.runtime.native.System.IO.Ports/9.0.2": {
@@ -28703,7 +28907,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.4": {
+      "Microsoft.NET.ILLink.Tasks/9.0.3": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -28772,6 +28976,18 @@
           "lib/net6.0/MongoDB.Driver.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.android-arm.runtime.native.System.IO.Ports/9.0.2": {
@@ -29568,7 +29784,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.4": {
+      "Microsoft.NET.ILLink.Tasks/9.0.3": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -29637,6 +29853,18 @@
           "lib/net6.0/MongoDB.Driver.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.android-arm.runtime.native.System.IO.Ports/9.0.2": {
@@ -30484,7 +30712,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/9.0.4": {
+      "Microsoft.NET.ILLink.Tasks/9.0.3": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -30553,6 +30781,18 @@
           "lib/net6.0/MongoDB.Driver.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.android-arm.runtime.native.System.IO.Ports/9.0.2": {
@@ -31634,6 +31874,18 @@
           "lib/net6.0/MongoDB.Driver.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.android-arm.runtime.native.System.IO.Ports/9.0.2": {
@@ -33799,6 +34051,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "runtime.android-arm.runtime.native.System.IO.Ports/9.0.2": {
         "type": "package",
         "native": {
@@ -34894,6 +35158,18 @@
           "lib/net6.0/MongoDB.Driver.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.android-arm.runtime.native.System.IO.Ports/9.0.2": {
@@ -35993,6 +36269,18 @@
           }
         }
       },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        }
+      },
       "runtime.android-arm.runtime.native.System.IO.Ports/9.0.2": {
         "type": "package"
       },
@@ -37040,6 +37328,18 @@
           "lib/net6.0/MongoDB.Driver.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.android-arm.runtime.native.System.IO.Ports/9.0.2": {
@@ -38146,6 +38446,18 @@
           "lib/net6.0/MongoDB.Driver.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Controls": "4.0.0-preview2"
+        },
+        "compile": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {}
         }
       },
       "runtime.android-arm.runtime.native.System.IO.Ports/9.0.2": {
@@ -39785,10 +40097,10 @@
         "microsoft.maui.resizetizer.nuspec"
       ]
     },
-    "Microsoft.NET.ILLink.Tasks/9.0.4": {
-      "sha512": "xUdlUxiFwXhTYhB4VxKg/IA0+jlZXJPo70LYuMryWbJHdonIpZjw+7DO2B0pWwpXIOs6MlH5WVXPEtfrGEcVZA==",
+    "Microsoft.NET.ILLink.Tasks/9.0.3": {
+      "sha512": "1rqGTfubVg0qj2PsK6esyq3PIxtYJYrN3LsYUV9RrvH3anmt3fT3ozYdAZZH4U8JU/pt5pPIUk8NBSu26wtekA==",
       "type": "package",
-      "path": "microsoft.net.illink.tasks/9.0.4",
+      "path": "microsoft.net.illink.tasks/9.0.3",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -39802,7 +40114,7 @@
         "build/Microsoft.NET.ILLink.Analyzers.props",
         "build/Microsoft.NET.ILLink.Tasks.props",
         "build/Microsoft.NET.ILLink.targets",
-        "microsoft.net.illink.tasks.9.0.4.nupkg.sha512",
+        "microsoft.net.illink.tasks.9.0.3.nupkg.sha512",
         "microsoft.net.illink.tasks.nuspec",
         "tools/net472/ILLink.Tasks.dll",
         "tools/net472/ILLink.Tasks.dll.config",
@@ -40674,6 +40986,25 @@
         "mongodb.driver.3.3.0.nupkg.sha512",
         "mongodb.driver.nuspec",
         "packageIcon.png"
+      ]
+    },
+    "Plugin.Maui.Audio/4.0.0-preview2": {
+      "sha512": "vsvEiCbFPHKISHI7eEGzxjeDBP18ymiLh4YKJIwrIxDMBv0C5ffcY4bwAOsUJndv7tN1PSzwYve3jD6tuBKZ3w==",
+      "type": "package",
+      "path": "plugin.maui.audio/4.0.0-preview2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net9.0-android35.0/Plugin.Maui.Audio.dll",
+        "lib/net9.0-android35.0/Plugin.Maui.Audio.xml",
+        "lib/net9.0-ios18.0/Plugin.Maui.Audio.dll",
+        "lib/net9.0-maccatalyst18.0/Plugin.Maui.Audio.dll",
+        "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll",
+        "lib/net9.0/Plugin.Maui.Audio.dll",
+        "plugin.maui.audio.4.0.0-preview2.nupkg.sha512",
+        "plugin.maui.audio.nuspec"
       ]
     },
     "runtime.android-arm.runtime.native.System.IO.Ports/9.0.2": {
@@ -43979,8 +44310,9 @@
       "Microsoft.Extensions.Logging.Debug >= 9.0.2",
       "Microsoft.Maui.Controls >= 9.0.40",
       "Microsoft.Maui.Controls.Compatibility >= 9.0.40",
-      "Microsoft.NET.ILLink.Tasks >= 9.0.4",
+      "Microsoft.NET.ILLink.Tasks >= 9.0.3",
       "MongoDB.Driver >= 3.3.0",
+      "Plugin.Maui.Audio >= 4.0.0-preview2",
       "System.IO.Ports >= 9.0.2",
       "System.Management >= 10.0.0-preview.1.25080.5"
     ],
@@ -43991,8 +44323,9 @@
       "Microsoft.Extensions.Logging.Debug >= 9.0.2",
       "Microsoft.Maui.Controls >= 9.0.40",
       "Microsoft.Maui.Controls.Compatibility >= 9.0.40",
-      "Microsoft.NET.ILLink.Tasks >= 9.0.4",
+      "Microsoft.NET.ILLink.Tasks >= 9.0.3",
       "MongoDB.Driver >= 3.3.0",
+      "Plugin.Maui.Audio >= 4.0.0-preview2",
       "System.IO.Ports >= 9.0.2",
       "System.Management >= 10.0.0-preview.1.25080.5"
     ],
@@ -44003,8 +44336,9 @@
       "Microsoft.Extensions.Logging.Debug >= 9.0.2",
       "Microsoft.Maui.Controls >= 9.0.40",
       "Microsoft.Maui.Controls.Compatibility >= 9.0.40",
-      "Microsoft.NET.ILLink.Tasks >= 9.0.4",
+      "Microsoft.NET.ILLink.Tasks >= 9.0.3",
       "MongoDB.Driver >= 3.3.0",
+      "Plugin.Maui.Audio >= 4.0.0-preview2",
       "System.IO.Ports >= 9.0.2",
       "System.Management >= 10.0.0-preview.1.25080.5"
     ],
@@ -44016,29 +44350,30 @@
       "Microsoft.Maui.Controls >= 9.0.40",
       "Microsoft.Maui.Controls.Compatibility >= 9.0.40",
       "MongoDB.Driver >= 3.3.0",
+      "Plugin.Maui.Audio >= 4.0.0-preview2",
       "System.IO.Ports >= 9.0.2",
       "System.Management >= 10.0.0-preview.1.25080.5"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mat22\\.nuget\\packages\\": {},
+    "C:\\Users\\ayoub\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\MyApp.csproj",
+      "projectUniqueName": "C:\\Users\\ayoub\\Documents\\Net3\\MyApp-main\\MyApp.csproj",
       "projectName": "MyApp",
-      "projectPath": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\MyApp.csproj",
-      "packagesPath": "C:\\Users\\mat22\\.nuget\\packages\\",
-      "outputPath": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\obj\\",
+      "projectPath": "C:\\Users\\ayoub\\Documents\\Net3\\MyApp-main\\MyApp.csproj",
+      "packagesPath": "C:\\Users\\ayoub\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ayoub\\Documents\\Net3\\MyApp-main\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\mat22\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ayoub\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -44114,12 +44449,16 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[9.0.4, )",
+            "version": "[9.0.3, )",
             "autoReferenced": true
           },
           "MongoDB.Driver": {
             "target": "Package",
             "version": "[3.3.0, )"
+          },
+          "Plugin.Maui.Audio": {
+            "target": "Package",
+            "version": "[4.0.0-preview2, )"
           },
           "System.IO.Ports": {
             "target": "Package",
@@ -44149,7 +44488,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       },
       "net9.0-ios18.2": {
         "targetAlias": "net9.0-ios",
@@ -44181,12 +44520,16 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[9.0.4, )",
+            "version": "[9.0.3, )",
             "autoReferenced": true
           },
           "MongoDB.Driver": {
             "target": "Package",
             "version": "[3.3.0, )"
+          },
+          "Plugin.Maui.Audio": {
+            "target": "Package",
+            "version": "[4.0.0-preview2, )"
           },
           "System.IO.Ports": {
             "target": "Package",
@@ -44216,7 +44559,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       },
       "net9.0-maccatalyst18.2": {
         "targetAlias": "net9.0-maccatalyst",
@@ -44248,12 +44591,16 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[9.0.4, )",
+            "version": "[9.0.3, )",
             "autoReferenced": true
           },
           "MongoDB.Driver": {
             "target": "Package",
             "version": "[3.3.0, )"
+          },
+          "Plugin.Maui.Audio": {
+            "target": "Package",
+            "version": "[4.0.0-preview2, )"
           },
           "System.IO.Ports": {
             "target": "Package",
@@ -44284,7 +44631,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       },
       "net9.0-windows10.0.19041": {
         "targetAlias": "net9.0-windows10.0.19041.0",
@@ -44316,6 +44663,10 @@
           "MongoDB.Driver": {
             "target": "Package",
             "version": "[3.3.0, )"
+          },
+          "Plugin.Maui.Audio": {
+            "target": "Package",
+            "version": "[4.0.0-preview2, )"
           },
           "System.IO.Ports": {
             "target": "Package",
@@ -44351,7 +44702,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

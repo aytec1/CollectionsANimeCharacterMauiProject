@@ -16,6 +16,7 @@
           "Microsoft.Maui.Controls": "9.0.40",
           "Microsoft.Maui.Controls.Compatibility": "9.0.40",
           "MongoDB.Driver": "3.3.0",
+          "Plugin.Maui.Audio": "4.0.0-preview2",
           "System.IO.Ports": "9.0.2",
           "System.Management": "10.0.0-preview.1.25080.5",
           "Microsoft.Web.WebView2.Core.Projection": "1.0.2792.45",
@@ -553,6 +554,17 @@
           }
         }
       },
+      "Plugin.Maui.Audio/4.0.0-preview2": {
+        "dependencies": {
+          "Microsoft.Maui.Controls": "9.0.40"
+        },
+        "runtime": {
+          "lib/net9.0-windows10.0.19041/Plugin.Maui.Audio.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
       "runtime.android-arm.runtime.native.System.IO.Ports/9.0.2": {},
       "runtime.android-arm64.runtime.native.System.IO.Ports/9.0.2": {},
       "runtime.android-x64.runtime.native.System.IO.Ports/9.0.2": {},
@@ -967,6 +979,13 @@
       "sha512": "sha512-1EVdMMTsUllMJC+4BPQlcxGzn1pB43vAQ03VCx0QpfbhzaYTqnuHKBp3rAPG5aSo2az4JXKXwrQca7GhP/NhUQ==",
       "path": "mongodb.driver/3.3.0",
       "hashPath": "mongodb.driver.3.3.0.nupkg.sha512"
+    },
+    "Plugin.Maui.Audio/4.0.0-preview2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vsvEiCbFPHKISHI7eEGzxjeDBP18ymiLh4YKJIwrIxDMBv0C5ffcY4bwAOsUJndv7tN1PSzwYve3jD6tuBKZ3w==",
+      "path": "plugin.maui.audio/4.0.0-preview2",
+      "hashPath": "plugin.maui.audio.4.0.0-preview2.nupkg.sha512"
     },
     "runtime.android-arm.runtime.native.System.IO.Ports/9.0.2": {
       "type": "package",
