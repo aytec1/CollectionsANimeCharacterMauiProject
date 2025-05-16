@@ -4,114 +4,102 @@
              xmlns:viewmodel="clr-namespace:MyApp.ViewModel"
              xmlns:model="clr-namespace:MyApp.Model"             
              x:Class="MyApp.View.MainView"
-             x:DataType="viewmodel:MainViewModel">
+             x:DataType="viewmodel:MainViewModel"
+             BackgroundColor="#1A1A1D">
     <ScrollView>
-     
         <VerticalStackLayout Spacing="20" Padding="20">
             <HorizontalStackLayout Padding="10" Spacing="10">
-                <Label Text="Emulateur QR : " VerticalOptions="Center"/>
+                <Label Text="🎯 Emulateur QR : " 
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       FontSize="18"
+                       VerticalOptions="Center"/>
                 <Switch IsToggled="{Binding EmulatorOnOff}"
-                OnColor="Green"
-                ThumbColor="White"
-                VerticalOptions="Center"/>
-            </HorizontalStackLayout>
-            
-            <Button     Text="Add object"
-                        Grid.Column="0"
-                        HorizontalOptions="Start"
-                        HeightRequest="50"
-                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=GoToDetailsCommand}"
-                        CommandParameter="0"
-                        IsEnabled="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=IsNotBusy}">
-            </Button>
-            <HorizontalStackLayout Spacing="10">
-                <Button     Text="Télécharger les personnages"
-                            Grid.Column="0"
-                            HorizontalOptions="Start"
-                            HeightRequest="50"
-                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=PrintToCSVCommand}"
-                            CommandParameter="0"
-                            IsEnabled="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=IsNotBusy}">
-                </Button>
-                <Button     Text="Charger les personnages"
-                            Grid.Column="0"
-                            HorizontalOptions="Start"
-                            HeightRequest="50"
-                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=LoadFromCSVCommand}"
-                            CommandParameter="0"
-                            IsEnabled="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=IsNotBusy}">
-                </Button>
-                <Button     Text="Graphique"
-                            Grid.Column="0"
-                            HorizontalOptions="Start"
-                            HeightRequest="50"
-                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=GoToGraphCommand}"
-                            CommandParameter="0"
-                            IsEnabled="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=IsNotBusy}">
-                </Button>
-                <Button     Text="Charger la collection"
-                            Grid.Column="0"
-                            HorizontalOptions="Start"
-                            HeightRequest="50"
-                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=UploadJSONCommand}"
-                            IsEnabled="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=IsNotBusy}">
-                </Button>
-                <Button Text="Ajouter un utilisateur" 
-                        Command="{Binding GoToUserCreationCommand}" />
-                <Button Text="Voir utilisateurs"
-                        Command="{Binding GoToUserListCommand}" />
-                <Button Text="Connexion"
-                        Command="{Binding GoToLoginCommand}"
-                        IsEnabled="{Binding IsNotBusy}" />
-                <Button Text="Ajouter depuis le catalogue"
-                        Command="{Binding GoToCharacterCatalogCommand}"/>
+                        OnColor="#FF4500"
+                        ThumbColor="White"
+                        VerticalOptions="Center"/>
             </HorizontalStackLayout>
 
-            <CollectionView ItemsSource="{Binding MyObservableList}"
-                            SelectionMode="None">
+            <Label Text="🧙‍♂️ Gestion des personnages"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#FFD700" />
+
+            <Button Text="✨ Ajouter un objet"
+                    BackgroundColor="#FF4500"
+                    TextColor="White"
+                    CornerRadius="15"
+                    HeightRequest="50"
+                    Command="{Binding GoToDetailsCommand}"
+                    CommandParameter="0" />
+
+            <HorizontalStackLayout Spacing="10">
+                <Button Text="📥 Télécharger"
+                        BackgroundColor="#3498DB"
+                        TextColor="White"
+                        Command="{Binding PrintToCSVCommand}" />
+
+                <Button Text="📤 Charger"
+                        BackgroundColor="#27AE60"
+                        TextColor="White"
+                        Command="{Binding LoadFromCSVCommand}" />
+
+                <Button Text="📊 Graphique"
+                        BackgroundColor="#8E44AD"
+                        TextColor="White"
+                        Command="{Binding GoToGraphCommand}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10">
+                <Button Text="📂 Collection"
+                        BackgroundColor="#E67E22"
+                        TextColor="White"
+                        Command="{Binding UploadJSONCommand}" />
+
+                <Button Text="👤 Ajouter utilisateur"
+                        BackgroundColor="#2C3E50"
+                        TextColor="White"
+                        Command="{Binding GoToUserCreationCommand}" />
+
+                <Button Text="📋 Voir utilisateurs"
+                        BackgroundColor="#2C3E50"
+                        TextColor="White"
+                        Command="{Binding GoToUserListCommand}" />
+            </HorizontalStackLayout>
+
+            <Button Text="🔑 Connexion"
+                    BackgroundColor="#16A085"
+                    TextColor="White"
+                    Command="{Binding GoToLoginCommand}" />
+
+            <Button Text="📚 Catalogue"
+                    BackgroundColor="#F39C12"
+                    TextColor="White"
+                    Command="{Binding GoToCharacterCatalogCommand}" />
+
+            <CollectionView ItemsSource="{Binding MyObservableList}" SelectionMode="None">
                 <CollectionView.ItemsLayout>
-                    <GridItemsLayout    Orientation="Vertical"
-                                        Span="2"  
-                                        HorizontalItemSpacing="10"
-                                        VerticalItemSpacing="10" />
+                    <GridItemsLayout Orientation="Vertical" Span="2" HorizontalItemSpacing="10" VerticalItemSpacing="10" />
                 </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
-                    <DataTemplate  x:DataType="model:AnimeCharacter">
-                        <Border     StrokeThickness="4"
-                            StrokeShape="RoundRectangle 10,10,10,10"
-                            Padding="10">
-                            <Grid HeightRequest="100" ColumnDefinitions="0.5*,*">
+                    <DataTemplate x:DataType="model:AnimeCharacter">
+                        <Border StrokeThickness="3" BackgroundColor="#2E2E2E" Stroke="White" Padding="10" StrokeShape="RoundRectangle 10,10,10,10">
+                            <Grid HeightRequest="120" ColumnDefinitions="0.5*,*">
                                 <Image Grid.Column="0"
                                        Source="{Binding Picture}"
                                        HorizontalOptions="Start"
                                        Aspect="AspectFit"
-                                       HeightRequest="100"
-                                       x:Name="CharacterImage">
+                                       HeightRequest="100">
                                     <Image.GestureRecognizers>
                                         <TapGestureRecognizer Tapped="OnCharacterTapped" />
                                     </Image.GestureRecognizers>
                                 </Image>
-                                <VerticalStackLayout Grid.Column="1">
-                                    <Label  Text="{Binding Path=Id,StringFormat='ID: {0:S2}'}"
-                                    Style="{StaticResource SubHeadline}"
-                                    FontSize="15"
-                                    HorizontalOptions="Start"
-                                    VerticalOptions="Center"/>
-                                    <Label  Text="{Binding Path=Name,StringFormat='Name: {0:S10}'}"
-                                    Style="{StaticResource SubHeadline}"
-                                    FontSize="15"
-                                    HorizontalOptions="Start"
-                                    VerticalOptions="Center"/>
-                                    <Label  Text="{Binding Path=Description,StringFormat='Description: {0:S10}'}"
-                                    Style="{StaticResource SubHeadline}"
-                                    FontSize="15"
-                                    HorizontalOptions="Start"
-                                    VerticalOptions="Center"/>
-                                    <Label Text="{Binding Path=SpecialAttack, StringFormat='Attaque: {0:S10}'}"
-                                    Style="{StaticResource SubHeadline}"
-                                    FontSize="15"
-                                    HorizontalOptions="Start"
-                                    VerticalOptions="Center"/>
+                                <VerticalStackLayout Grid.Column="1" Spacing="5">
+                                    <Label Text="{Binding Name}" FontSize="18" FontAttributes="Bold" TextColor="#F1C40F" />
+                                    <Label Text="{Binding Description}" FontSize="14" TextColor="White" />
+                                    <Label Text="{Binding SpecialAttack}" FontSize="14" TextColor="#EC7063" />
+                                    <Label Text="{Binding Origin}" FontSize="12" TextColor="#BDC3C7" />
                                 </VerticalStackLayout>
                             </Grid>
                         </Border>
@@ -119,5 +107,5 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </VerticalStackLayout>
-    </ScrollView>   
+    </ScrollView>
 </ContentPage>

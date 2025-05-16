@@ -2,83 +2,94 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodel="clr-namespace:MyApp.ViewModel"
-             xmlns:model="clr-namespace:MyApp.Model" 
              x:Class="MyApp.View.DetailsView"             
              x:DataType="viewmodel:DetailsViewModel"
-             Title="DetailsView">
+             BackgroundColor="#121212"
+             Title="🎌 Détails du personnage">
 
-    <VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="25">
 
-        <!--  Adapté pour 7 lignes -->
-        <Grid ColumnDefinitions="0.1*,0.3*,*" RowDefinitions="*,*,*,*,*,*,*,*" Padding="20" RowSpacing="20">
+            <Label Text="✏️ Modifier un personnage"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="#FFD700"
+                   HorizontalOptions="Center" />
 
-            <Label  Grid.Column="0" Grid.Row="0" Text="Id:" VerticalOptions="Center"/>
-            <Entry  Grid.Column="1" Grid.Row="0"  
-                    Text="{Binding Id}"
-                    VerticalOptions="Center" 
-                    HorizontalOptions="Center" 
-                    WidthRequest="300"/>
+            <Frame BackgroundColor="#1E1E1E"
+                   CornerRadius="20"
+                   Padding="25"
+                   HasShadow="True"
+                   BorderColor="#FFD700">
 
-            <Label  Grid.Column="0" Grid.Row="1" Text="Nom:" VerticalOptions="Center"/>
-            <Entry  Grid.Column="1" Grid.Row="1"
-                    Text="{Binding Name}"
-                    VerticalOptions="Center" 
-                    HorizontalOptions="Center" 
-                    WidthRequest="300" />
+                <VerticalStackLayout Spacing="20">
 
-            <Label  Grid.Column="0" Grid.Row="2" Text="Description:" VerticalOptions="Center"/>
-            <Entry  Grid.Column="1" Grid.Row="2"
-                    Text="{Binding Description}"
-                    VerticalOptions="Center" 
-                    HorizontalOptions="Center" 
-                    WidthRequest="300" />
+                    <!-- ID -->
+                    <Label Text="🆔 ID :" TextColor="#CCCCCC" FontAttributes="Bold"/>
+                    <Border Stroke="#444" BackgroundColor="#2C2C2C" StrokeShape="RoundRectangle 12">
+                        <Entry Text="{Binding Id}" TextColor="White" BackgroundColor="Transparent" />
+                    </Border>
 
-            <Label  Grid.Column="0" Grid.Row="3" Text="Image:" VerticalOptions="Center"/>
-            <Entry  Grid.Column="1" Grid.Row="3" 
-                    Text="{Binding Picture}"
-                    VerticalOptions="Center" 
-                    HorizontalOptions="Center" 
-                    WidthRequest="300" />
+                    <!-- Nom -->
+                    <Label Text="📛 Nom :" TextColor="#CCCCCC" FontAttributes="Bold"/>
+                    <Border Stroke="#444" BackgroundColor="#2C2C2C" StrokeShape="RoundRectangle 12">
+                        <Entry Text="{Binding Name}" TextColor="White" BackgroundColor="Transparent" />
+                    </Border>
 
-            <!--  Nouveau champ : Attaque spéciale -->
-            <Label  Grid.Column="0" Grid.Row="4" Text="Attaque spéciale:" VerticalOptions="Center"/>
-            <Entry  Grid.Column="1" Grid.Row="4" 
-                    Text="{Binding SpecialAttack}"
-                    VerticalOptions="Center" 
-                    HorizontalOptions="Center" 
-                    WidthRequest="300" />
+                    <!-- Description -->
+                    <Label Text="📖 Description :" TextColor="#CCCCCC" FontAttributes="Bold"/>
+                    <Border Stroke="#444" BackgroundColor="#2C2C2C" StrokeShape="RoundRectangle 12">
+                        <Entry Text="{Binding Description}" TextColor="White" BackgroundColor="Transparent" />
+                    </Border>
 
-            <!--  Nouveau champ : Son -->
-            <Label  Grid.Column="0" Grid.Row="5" Text="Son:" VerticalOptions="Center"/>
-            <Entry  Grid.Column="1" Grid.Row="5" 
-                    Text="{Binding Sound}"
-                    VerticalOptions="Center" 
-                    HorizontalOptions="Center" 
-                    WidthRequest="300" />
-            <Label Grid.Column="0" Grid.Row="6" Text="Origine:" VerticalOptions="Center"/>
-            <Picker Grid.Column="1" Grid.Row="6"
-                    ItemsSource="{Binding OriginsList}"
-                    SelectedItem="{Binding Origin}"
-                    WidthRequest="300"
-                    HorizontalOptions="Center" />
+                    <!-- Image -->
+                    <Label Text="🖼️ Image :" TextColor="#CCCCCC" FontAttributes="Bold"/>
+                    <Border Stroke="#444" BackgroundColor="#2C2C2C" StrokeShape="RoundRectangle 12">
+                        <Entry Text="{Binding Picture}" TextColor="White" BackgroundColor="Transparent" />
+                    </Border>
 
-            <Button x:Name="MyAnimatedButton"
-                    Grid.Column="1"
-                    Grid.Row="7"
-                    WidthRequest="100" 
-                    HorizontalOptions="Center"
-                    Text="Valider"
-                    Command="{Binding ChangeObjectParametersCommand}"
-                    Clicked="MyAnimatedButton_Clicked"
-                    IsEnabled="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:BaseViewModel}}, Path= IsNotBusy}"/>
-            
+                    <!-- Attaque Spéciale -->
+                    <Label Text="⚔️ Attaque spéciale :" TextColor="#CCCCCC" FontAttributes="Bold"/>
+                    <Border Stroke="#444" BackgroundColor="#2C2C2C" StrokeShape="RoundRectangle 12">
+                        <Entry Text="{Binding SpecialAttack}" TextColor="White" BackgroundColor="Transparent" />
+                    </Border>
 
-        </Grid>
+                    <!-- Son -->
+                    <Label Text="🔊 Son :" TextColor="#CCCCCC" FontAttributes="Bold"/>
+                    <Border Stroke="#444" BackgroundColor="#2C2C2C" StrokeShape="RoundRectangle 12">
+                        <Entry Text="{Binding Sound}" TextColor="White" BackgroundColor="Transparent" />
+                    </Border>
 
-        <HorizontalStackLayout Spacing="20">
-            <Label Text="Serial Data: "></Label>
-            <Label Text="{Binding SerialBufferContent}" TextColor="Red"></Label>
-        </HorizontalStackLayout>
+                    <!-- Origine -->
+                    <Label Text="🌍 Origine :" TextColor="#CCCCCC" FontAttributes="Bold"/>
+                    <Border Stroke="#444" BackgroundColor="#2C2C2C" StrokeShape="RoundRectangle 12">
+                        <Picker ItemsSource="{Binding OriginsList}"
+                                SelectedItem="{Binding Origin}"
+                                TextColor="White"
+                                BackgroundColor="Transparent" />
+                    </Border>
 
-    </VerticalStackLayout>
+                    <!-- Bouton -->
+                    <Button x:Name="MyAnimatedButton"
+                            Grid.Row="7" Grid.Column="1"
+                            Text=" Valider"
+                            BackgroundColor="#FF4500"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            CornerRadius="15"
+                            HeightRequest="50"
+                            Command="{Binding ChangeObjectParametersCommand}"
+                            Clicked="MyAnimatedButton_Clicked"
+                            IsEnabled="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:BaseViewModel}}, Path=IsNotBusy}" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Debug Serial -->
+            <HorizontalStackLayout Spacing="8" Padding="0,10">
+                <Label Text="📡 Serial Data:" TextColor="#CCCCCC" />
+                <Label Text="{Binding SerialBufferContent}" TextColor="#FF6F61" FontAttributes="Bold"/>
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

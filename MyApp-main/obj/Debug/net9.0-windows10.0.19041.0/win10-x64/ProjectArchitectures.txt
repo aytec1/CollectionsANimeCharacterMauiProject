@@ -1,1 +1,1 @@
-D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\MyApp.csproj;x64
+C:\Users\ayoub\Documents\Net3\MyApp-main\MyApp.csproj;x64

@@ -3,24 +3,52 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodel="clr-namespace:MyApp.ViewModel"
              x:Class="MyApp.View.UserCreationView"
-             Title="Créer un utilisateur">
-
-    <ContentPage.BindingContext>
-        <viewmodel:UserCreationViewModel />
-    </ContentPage.BindingContext>
+             x:DataType="viewmodel:UserCreationViewModel"
+             BackgroundColor="#121212"
+             Title="👤 Créer un utilisateur">
 
     <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="15">
+        <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="Center">
 
-            <Entry Placeholder="Prénom" Text="{Binding FirstName}" />
-            <Entry Placeholder="Nom" Text="{Binding LastName}" />
-            <Entry Placeholder="Email" Text="{Binding Email}" Keyboard="Email" />
-            <Entry Placeholder="Mot de passe" Text="{Binding Password}" IsPassword="True" />
-            <Entry Placeholder="Rôle" Text="{Binding Role}" />
+            <Label Text="🛠️ Création de compte"
+                   FontSize="26"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#FFD700" />
 
-            <Button Text="Créer l'utilisateur" Command="{Binding CreateUserCommand}" />
+            <!-- Prénom -->
+            <Border Stroke="#444" BackgroundColor="#1E1E1E" StrokeShape="RoundRectangle 12">
+                <Entry Placeholder="Prénom" Text="{Binding FirstName}" TextColor="White" BackgroundColor="Transparent" />
+            </Border>
 
+            <!-- Nom -->
+            <Border Stroke="#444" BackgroundColor="#1E1E1E" StrokeShape="RoundRectangle 12">
+                <Entry Placeholder="Nom" Text="{Binding LastName}" TextColor="White" BackgroundColor="Transparent" />
+            </Border>
+
+            <!-- Email -->
+            <Border Stroke="#444" BackgroundColor="#1E1E1E" StrokeShape="RoundRectangle 12">
+                <Entry Placeholder="Email" Text="{Binding Email}" Keyboard="Email" TextColor="White" BackgroundColor="Transparent" />
+            </Border>
+
+            <!-- Mot de passe -->
+            <Border Stroke="#444" BackgroundColor="#1E1E1E" StrokeShape="RoundRectangle 12">
+                <Entry Placeholder="Mot de passe" Text="{Binding Password}" IsPassword="True" TextColor="White" BackgroundColor="Transparent" />
+            </Border>
+
+            <!-- Rôle -->
+            <Border Stroke="#444" BackgroundColor="#1E1E1E" StrokeShape="RoundRectangle 12">
+                <Entry Placeholder="Rôle (ex: admin)" Text="{Binding Role}" TextColor="White" BackgroundColor="Transparent" />
+            </Border>
+
+            <!-- Bouton création -->
+            <Button Text=" Créer l'utilisateur"
+                    HeightRequest="50"
+                    BackgroundColor="#E74C3C"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="15"
+                    Command="{Binding CreateUserCommand}" />
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
-

@@ -3,25 +3,50 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModel="clr-namespace:MyApp.ViewModel"
              x:Class="MyApp.View.CharacterCatalogView"
-             Title="Catalogue">
+             BackgroundColor="#121212"
+             Title="📚 Catalogue">
 
     <ContentPage.BindingContext>
         <viewModel:CharacterCatalogViewModel />
     </ContentPage.BindingContext>
 
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+            <Label Text="🎴 Catalogue des personnages"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#FFD700" />
 
-    <CollectionView ItemsSource="{Binding AllCharacters}">
-        <CollectionView.ItemTemplate>
-            <DataTemplate>
-                <StackLayout Padding="10">
-                    <Label Text="{Binding Name}" FontAttributes="Bold"/>
-                    <Label Text="{Binding Origin}" FontSize="12"/>
-                    <Button Text="Ajouter à ma collection"
-                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewModel:CharacterCatalogViewModel}}, Path=AddToUserCollectionCommand}"
-                            CommandParameter="{Binding .}" />
-                </StackLayout>
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-    </CollectionView>
+            <CollectionView ItemsSource="{Binding AllCharacters}">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="2" HorizontalItemSpacing="10" VerticalItemSpacing="10" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BackgroundColor="#1E1E1E" CornerRadius="20" Padding="15" HasShadow="True" BorderColor="#2ECC71">
+                            <VerticalStackLayout Spacing="8">
+                                <Label Text="{Binding Name}"
+                                       FontSize="18"
+                                       FontAttributes="Bold"
+                                       TextColor="#F1C40F" />
+
+                                <Label Text="{Binding Origin}"
+                                       FontSize="14"
+                                       TextColor="#BDC3C7" />
+
+                                <Button Text="➕ Ajouter à ma collection"
+                                        BackgroundColor="#E67E22"
+                                        TextColor="White"
+                                        FontAttributes="Bold"
+                                        CornerRadius="10"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewModel:CharacterCatalogViewModel}}, Path=AddToUserCollectionCommand}"
+                                        CommandParameter="{Binding .}" />
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
-

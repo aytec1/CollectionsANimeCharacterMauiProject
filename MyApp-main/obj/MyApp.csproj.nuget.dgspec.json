@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\MyApp.csproj": {}
+    "C:\\Users\\ayoub\\Documents\\Net3\\MyApp-main\\MyApp.csproj": {}
   },
   "projects": {
-    "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\MyApp.csproj": {
+    "C:\\Users\\ayoub\\Documents\\Net3\\MyApp-main\\MyApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\MyApp.csproj",
+        "projectUniqueName": "C:\\Users\\ayoub\\Documents\\Net3\\MyApp-main\\MyApp.csproj",
         "projectName": "MyApp",
-        "projectPath": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\MyApp.csproj",
-        "packagesPath": "C:\\Users\\mat22\\.nuget\\packages\\",
-        "outputPath": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\obj\\",
+        "projectPath": "C:\\Users\\ayoub\\Documents\\Net3\\MyApp-main\\MyApp.csproj",
+        "packagesPath": "C:\\Users\\ayoub\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ayoub\\Documents\\Net3\\MyApp-main\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mat22\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ayoub\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -94,7 +94,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.4, )",
+              "version": "[9.0.3, )",
               "autoReferenced": true
             },
             "MongoDB.Driver": {
@@ -133,7 +133,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         },
         "net9.0-ios18.2": {
           "targetAlias": "net9.0-ios",
@@ -165,7 +165,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.4, )",
+              "version": "[9.0.3, )",
               "autoReferenced": true
             },
             "MongoDB.Driver": {
@@ -204,7 +204,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         },
         "net9.0-maccatalyst18.2": {
           "targetAlias": "net9.0-maccatalyst",
@@ -236,7 +236,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.4, )",
+              "version": "[9.0.3, )",
               "autoReferenced": true
             },
             "MongoDB.Driver": {
@@ -276,7 +276,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         },
         "net9.0-windows10.0.19041": {
           "targetAlias": "net9.0-windows10.0.19041.0",
@@ -347,7 +347,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

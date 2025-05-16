@@ -3,27 +3,62 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodel="clr-namespace:MyApp.ViewModel"
              x:Class="MyApp.View.LoginView"
-             x:DataType="viewmodel:LoginViewModel">
+             x:DataType="viewmodel:LoginViewModel"
+             BackgroundColor="#121212"
+             Title="🔐 Connexion">
 
-    <VerticalStackLayout Padding="30" Spacing="20">
-        <Label Text="Connexion utilisateur" FontSize="24" HorizontalOptions="Center" />
+    <ScrollView>
+        <VerticalStackLayout Padding="40" Spacing="25" VerticalOptions="Center">
 
-        <Entry Placeholder="Email"
-               Text="{Binding Email}" />
+            <Label Text=" Connexion utilisateur"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="#FFD700"
+                   HorizontalOptions="Center" />
 
-        <Entry Placeholder="Mot de passe"
-               Text="{Binding Password}"
-               IsPassword="True" />
+            <!-- Email -->
+            <Label Text="📧 Email" TextColor="#CCCCCC" FontAttributes="Bold" />
+            <Border Stroke="#444" BackgroundColor="#2C2C2C" StrokeShape="RoundRectangle 12">
+                <Entry Placeholder="Email"
+                       Text="{Binding Email}"
+                       TextColor="White"
+                       BackgroundColor="Transparent"
+                       Keyboard="Email" />
+            </Border>
 
-        <Button Text="Se connecter"
-                Command="{Binding LoginCommand}" />
+            <!-- Mot de passe -->
+            <Label Text="🔑 Mot de passe" TextColor="#CCCCCC" FontAttributes="Bold" />
+            <Border Stroke="#444" BackgroundColor="#2C2C2C" StrokeShape="RoundRectangle 12">
+                <Entry Placeholder="Mot de passe"
+                       Text="{Binding Password}"
+                       IsPassword="True"
+                       TextColor="White"
+                       BackgroundColor="Transparent" />
+            </Border>
 
-        <Label Text="{Binding ErrorMessage}" TextColor="Red" IsVisible="{Binding HasError}" />
+            <!-- Erreur -->
+            <Label Text="{Binding ErrorMessage}" 
+                   TextColor="#FF4C4C" 
+                   IsVisible="{Binding HasError}" 
+                   FontAttributes="Italic" />
 
-        <Button Text="Créer un compte"
-        Command="{Binding GoToUserCreationCommand}"
-        HorizontalOptions="Center"
-        Margin="0,20,0,0"/>
+            <!-- Connexion -->
+            <Button Text=" Se connecter"
+                    BackgroundColor="#E74C3C"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="15"
+                    HeightRequest="50"
+                    Command="{Binding LoginCommand}" />
 
-    </VerticalStackLayout>
+            <!-- Lien vers création -->
+            <Button Text="📝 Créer un compte"
+                    BackgroundColor="Transparent"
+                    TextColor="#3498DB"
+                    FontAttributes="Bold"
+                    Command="{Binding GoToUserCreationCommand}"
+                    HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

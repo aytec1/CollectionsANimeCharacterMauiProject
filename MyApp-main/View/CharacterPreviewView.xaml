@@ -3,9 +3,29 @@
              x:Class="MyApp.View.CharacterPreviewView"
              xmlns:viewmodel="clr-namespace:MyApp.ViewModel"
              x:DataType="viewmodel:CharacterPreviewViewModel"
-             Title="Aperçu du personnage">
-    <VerticalStackLayout Padding="20" Spacing="20" HorizontalOptions="Center">
-        <Image Source="{Binding Picture}" HeightRequest="300" Aspect="AspectFit"/>
-        <Label Text="{Binding SpecialAttack}" FontAttributes="Bold" FontSize="24" />
+             BackgroundColor="#121212"
+             Title="👁️ Aperçu du personnage">
+
+    <VerticalStackLayout Padding="30" Spacing="30" HorizontalOptions="Center" VerticalOptions="Center">
+
+        <Frame HasShadow="True" CornerRadius="20" Padding="15" BackgroundColor="#1E1E1E" BorderColor="#FFD700">
+            <Image Source="{Binding Picture}"
+                   HeightRequest="250"
+                   WidthRequest="250"
+                   Aspect="AspectFit"
+                   HorizontalOptions="Center" />
+        </Frame>
+
+        <Label Text="🎯 Attaque Spéciale"
+               FontSize="20"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="#F1C40F" />
+
+        <Label Text="{Binding SpecialAttack}"
+               FontSize="28"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="#FF6F61" />
     </VerticalStackLayout>
 </ContentPage>
