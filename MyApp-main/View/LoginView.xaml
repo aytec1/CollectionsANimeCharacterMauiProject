@@ -19,5 +19,11 @@
                 Command="{Binding LoginCommand}" />
 
         <Label Text="{Binding ErrorMessage}" TextColor="Red" IsVisible="{Binding HasError}" />
+
+        <Button Text="Créer un compte"
+        Command="{Binding GoToUserCreationCommand}"
+        HorizontalOptions="Center"
+        Margin="0,20,0,0"/>
+
     </VerticalStackLayout>
 </ContentPage>

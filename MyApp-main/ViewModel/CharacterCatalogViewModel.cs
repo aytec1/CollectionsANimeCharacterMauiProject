@@ -41,7 +41,7 @@ namespace MyApp.ViewModel
             }
 
             var alreadyExists = Globals.MyAnimeCharacters.Any(c =>
-                c.Id == character.Id && c.UserId == Globals.CurrentUser.Id.ToString());
+                c.Id == character.Id && c.UserIds.Contains(Globals.CurrentUser.Id.ToString()));
 
             if (alreadyExists)
             {
@@ -58,7 +58,7 @@ namespace MyApp.ViewModel
                 Sound = character.Sound,
                 SpecialAttack = character.SpecialAttack,
                 Origin = character.Origin,
-                UserId = Globals.CurrentUser.Id.ToString()
+                UserIds = new List<string> { Globals.CurrentUser.Id.ToString() }
             };
 
             Globals.MyAnimeCharacters.Add(newChar);

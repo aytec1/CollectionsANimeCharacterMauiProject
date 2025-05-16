@@ -111,6 +111,15 @@ public partial class MainViewModel : BaseViewModel
     [RelayCommand]
     internal async Task PrintToCSV()
     {
+        if (Globals.CurrentUser == null || Globals.CurrentUser.Role?.ToLower() != "admin")
+        {
+            await Shell.Current.DisplayAlert(
+                "Accès refusé",
+                "Seuls les admins peuvent exporter les données.",
+                "OK");
+            return;
+        }
+
         IsBusy = true;
 
         await MyCSVServices.PrintData(Globals.MyAnimeCharacters);
@@ -121,13 +130,22 @@ public partial class MainViewModel : BaseViewModel
     [RelayCommand]
     internal async Task LoadFromCSV()
     {
+        if (Globals.CurrentUser == null || Globals.CurrentUser.Role?.ToLower() != "admin")
+        {
+            await Shell.Current.DisplayAlert(
+                "Accès refusé",
+                "Seuls les admins peuvent importer des données.",
+                "OK");
+            return;
+        }
+
         IsBusy = true;
 
         Globals.MyAnimeCharacters = await MyCSVServices.LoadData(Globals.MyAnimeCharacters);
 
-
         IsBusy = false;
     }
+
 
     [RelayCommand]
     internal async Task CleanAndSave()
@@ -158,9 +176,10 @@ public partial class MainViewModel : BaseViewModel
         if (Globals.MyAnimeCharacters.Count == 0)
             Globals.MyAnimeCharacters = await MyJSONService.GetAnimeCharacters();
 
-        // 🔽 Filtrer les personnages de l’utilisateur courant
         foreach (var item in Globals.MyAnimeCharacters
-                     .Where(c => c.UserId == Globals.CurrentUser.Id.ToString()))
+             .Where(c => c.UserIds != null && c.UserIds.Contains(Globals.CurrentUser.Id.ToString()))
+             .GroupBy(c => c.Id)
+             .Select(g => g.First()))
         {
             MyObservableList.Add(item);
         }

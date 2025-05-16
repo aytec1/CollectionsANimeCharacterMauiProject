@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MyApp.Service; // 👈 Ajoute cette ligne pour accéder à JSONServices
+using MyApp.Service;
 
 namespace MyApp.ViewModel;
 
@@ -35,7 +35,7 @@ public partial class DetailsViewModel : ObservableObject
     [ObservableProperty]
     public partial string? SerialBufferContent { get; set; }
 
-    public List<string> OriginsList { get; } = new() // 🆕 Liste pour le Picker
+    public List<string> OriginsList { get; } = new()
     {
         "One Piece",
         "Naruto",
@@ -77,37 +77,64 @@ public partial class DetailsViewModel : ObservableObject
     [RelayCommand]
     internal async Task ChangeObjectParametersAsync()
     {
+        var currentUserId = Globals.CurrentUser.Id.ToString();
+
+        if (string.IsNullOrWhiteSpace(Id))
+        {
+            await Shell.Current.DisplayAlert("Erreur", "L'identifiant ne peut pas être vide.", "OK");
+            return;
+        }
+
+        if (!Id.All(char.IsDigit))
+        {
+            await Shell.Current.DisplayAlert("Erreur", "L'identifiant ne peut contenir que des chiffres.", "OK");
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(Name) ||
+            string.IsNullOrWhiteSpace(Description) ||
+            string.IsNullOrWhiteSpace(Picture) ||
+            string.IsNullOrWhiteSpace(Sound) ||
+            string.IsNullOrWhiteSpace(SpecialAttack) ||
+            string.IsNullOrWhiteSpace(Origin))
+        {
+            await Shell.Current.DisplayAlert("Erreur",
+                "Tous les champs sont obligatoires : Nom, Description, Image, Son, Attaque spéciale, Origine.",
+                "OK");
+            return;
+        }
+
         var existing = Globals.MyAnimeCharacters.FirstOrDefault(x => x.Id == Id);
 
         if (existing != null)
         {
-            // ✏️ Mise à jour d’un personnage existant
-            existing.Name = Name ?? string.Empty;
-            existing.Description = Description ?? string.Empty;
-            existing.Picture = Picture ?? string.Empty;
-            existing.Sound = Sound ?? string.Empty;
-            existing.SpecialAttack = SpecialAttack ?? string.Empty;
-            existing.Origin = Origin ?? string.Empty;
+            existing.Name = Name!;
+            existing.Description = Description!;
+            existing.Picture = Picture!;
+            existing.Sound = Sound!;
+            existing.SpecialAttack = SpecialAttack!;
+            existing.Origin = Origin!;
+
+            if (!existing.UserIds.Contains(currentUserId))
+            {
+                existing.UserIds.Add(currentUserId);
+            }
         }
-        else if (!string.IsNullOrWhiteSpace(Id))
+        else
         {
-            // ➕ Ajout d’un nouveau personnage
             Globals.MyAnimeCharacters.Add(new AnimeCharacter
             {
-                Id = Id,
-                Name = Name ?? string.Empty,
-                Description = Description ?? string.Empty,
-                Picture = Picture ?? string.Empty,
-                Sound = Sound ?? string.Empty,
-                SpecialAttack = SpecialAttack ?? string.Empty,
-                Origin = Origin ?? string.Empty,
-                UserId = Globals.CurrentUser.Id.ToString()
+                Id = Id!,
+                Name = Name!,
+                Description = Description!,
+                Picture = Picture!,
+                Sound = Sound!,
+                SpecialAttack = SpecialAttack!,
+                Origin = Origin!,
+                UserIds = new List<string> { currentUserId }
             });
         }
 
-        //  Sauvegarde dans le JSON distant
         await MyJSONService.SetAnimeCharacters(Globals.MyAnimeCharacters);
     }
-
-
 }

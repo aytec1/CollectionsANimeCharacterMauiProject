@@ -634,3 +634,7 @@ D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-mai
 C:\Users\ayoub\Documents\Net3\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\gon.scale-100.png
 C:\Users\ayoub\Documents\Net3\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\izuku.scale-100.png
 C:\Users\ayoub\Documents\Net3\MyApp-main\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Plugin.Maui.Audio.dll
+D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Plugin.Maui.Audio.dll
+D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\zoro.scale-100.png
+D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\kakashi.scale-100.png
+D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\gohan.scale-100.png

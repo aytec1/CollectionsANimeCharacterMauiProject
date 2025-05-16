@@ -28,10 +28,15 @@ public partial class GraphViewModel : ObservableObject
 
     private void LoadPieChartFromCharacters()
     {
-        usedColors.Clear(); // Nettoie pour éviter les restes entre 2 chargements
+        usedColors.Clear();
 
-        var groupedByOrigin = Globals.MyAnimeCharacters
-            .Where(c => !string.IsNullOrEmpty(c.Origin))
+        var uniqueCharacters = Globals.MyAnimeCharacters
+            .Where(c => !string.IsNullOrEmpty(c.Origin) && !string.IsNullOrWhiteSpace(c.Id))
+            .GroupBy(c => c.Id)                  // Éliminer les doublons par Id
+            .Select(g => g.First())              // Garder un seul exemplaire
+            .ToList();
+
+        var groupedByOrigin = uniqueCharacters
             .GroupBy(c => c.Origin)
             .Select(g => new { Origin = g.Key, Count = g.Count() })
             .ToList();
@@ -39,12 +44,11 @@ public partial class GraphViewModel : ObservableObject
         var entries = groupedByOrigin.Select(g => new ChartEntry(g.Count)
         {
             Label = g.Origin,
-            ValueLabel = $"{g.Count} personnages",
+            ValueLabel = $"{g.Count} personnage(s)",
             Color = SKColor.Parse(GetUniqueRandomColorHex()),
             ValueLabelColor = SKColors.White,
             TextColor = SKColors.White
         }).ToArray();
-
 
         MyObservableChart = new RadarChart
         {
@@ -53,8 +57,8 @@ public partial class GraphViewModel : ObservableObject
             BackgroundColor = SKColors.Transparent,
             MinValue = 0
         };
-
     }
+
 
     private string GetUniqueRandomColorHex()
     {

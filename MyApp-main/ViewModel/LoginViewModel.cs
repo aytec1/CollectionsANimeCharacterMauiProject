@@ -61,5 +61,11 @@ public partial class LoginViewModel : ObservableObject
             HasError = true;
         }
     }
+    [RelayCommand]
+    async Task GoToUserCreation()
+    {
+        await Shell.Current.GoToAsync("UserCreationView");
+    }
+
 
 }

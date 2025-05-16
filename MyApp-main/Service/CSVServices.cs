@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Maui.Storage;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,18 +21,40 @@ public class CSVServices
 
         if (result != null)
         {
-            var lines = await File.ReadAllLinesAsync(result.FullPath, Encoding.UTF8);
+            var lines = new List<string>();
 
-            if (lines.Length < 2)
+            try
+            {
+                using var stream = new FileStream(result.FullPath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+                using var reader = new StreamReader(stream, Encoding.UTF8);
+
+                while (!reader.EndOfStream)
+                {
+                    var line = await reader.ReadLineAsync();
+                    if (line != null)
+                        lines.Add(line);
+                }
+            }
+            catch (IOException)
+            {
+                await Shell.Current.DisplayAlert("Erreur",
+                    "Impossible de lire le fichier. Il est peut-être utilisé par une autre application. Veuillez le fermer ou en faire une copie.",
+                    "OK");
+                return existingData;
+            }
+
+            if (lines.Count < 2)
                 return existingData; // Aucune donnée à traiter
 
             var headers = lines[0].Split(';');
             var properties = typeof(AnimeCharacter).GetProperties();
 
             var headerList = headers.Select(h => h.Trim()).ToList();
-            var modelProperties = typeof(AnimeCharacter).GetProperties().Select(p => p.Name).ToList();
+            var modelProperties = properties.Select(p => p.Name).ToList();
 
-            var invalidHeaders = headerList.Where(h => !modelProperties.Contains(h, StringComparer.OrdinalIgnoreCase)).ToList();
+            var invalidHeaders = headerList
+                .Where(h => !modelProperties.Contains(h, StringComparer.OrdinalIgnoreCase))
+                .ToList();
 
             if (invalidHeaders.Any())
             {
@@ -41,12 +64,10 @@ public class CSVServices
                 return existingData;
             }
 
-
-            for (int i = 1; i < lines.Length; i++)
+            for (int i = 1; i < lines.Count; i++)
             {
                 var values = lines[i].Split(';');
 
-                // Ignore la ligne si elle est totalement vide ou remplie d'espaces
                 if (values.All(v => string.IsNullOrWhiteSpace(v)))
                     continue;
 
@@ -59,26 +80,77 @@ public class CSVServices
                     {
                         try
                         {
-                            object value = Convert.ChangeType(values[j], property.PropertyType);
-                            property.SetValue(obj, value);
+                            string input = values[j].Trim();
+                            if (string.IsNullOrWhiteSpace(input)) continue;
+
+                            object? value = null;
+
+                            if (property.PropertyType == typeof(int))
+                            {
+                                if (int.TryParse(input, out var intVal))
+                                    value = intVal;
+                                else
+                                    throw new Exception($"Valeur entière invalide pour {property.Name} : {input}");
+                            }
+                            else if (property.PropertyType == typeof(double))
+                            {
+                                if (double.TryParse(input, out var doubleVal))
+                                    value = doubleVal;
+                                else
+                                    throw new Exception($"Valeur décimale invalide pour {property.Name} : {input}");
+                            }
+                            else if (property.PropertyType == typeof(string))
+                            {
+                                value = input;
+                            }
+
+                            if (value != null)
+                                property.SetValue(obj, value);
                         }
-                        catch
+                        catch (Exception ex)
                         {
-                            // Ignore les erreurs de conversion si la valeur est incorrecte
+                            System.Diagnostics.Debug.WriteLine($"⚠️ Erreur de conversion (ligne {i + 1}) : {ex.Message}");
                         }
                     }
                 }
 
-                // Vérifie s'il existe déjà dans la collection (par Id)
+                // 🔐 Ajouter l'utilisateur courant à UserIds s'il n'est pas déjà là
+                var currentUserId = Globals.CurrentUser.Id.ToString();
+
+                if (obj.UserIds == null)
+                    obj.UserIds = new List<string>();
+
+                if (!obj.UserIds.Contains(currentUserId))
+                    obj.UserIds.Add(currentUserId);
+
+                if (string.IsNullOrWhiteSpace(obj.Id) || !obj.Id.All(char.IsDigit) ||
+                    string.IsNullOrWhiteSpace(obj.Name) ||
+                    string.IsNullOrWhiteSpace(obj.Description) ||
+                    string.IsNullOrWhiteSpace(obj.Picture) ||
+                    string.IsNullOrWhiteSpace(obj.Sound) ||
+                    string.IsNullOrWhiteSpace(obj.SpecialAttack) ||
+                    string.IsNullOrWhiteSpace(obj.Origin))
+                {
+                    System.Diagnostics.Debug.WriteLine($"❌ Ligne ignorée (incomplète ou invalide) : ID = {obj.Id}");
+                    continue;
+                }
+
                 var existing = existingData.FirstOrDefault(e => e.Id == obj.Id);
                 if (existing != null)
                 {
-                    // Mise à jour des propriétés
                     foreach (var prop in properties)
                     {
                         var newValue = prop.GetValue(obj);
-                        prop.SetValue(existing, newValue);
+                        if (newValue != null && prop.Name != "UserIds")
+                            prop.SetValue(existing, newValue);
                     }
+
+                    foreach (var uid in obj.UserIds)
+                    {
+                        if (!existing.UserIds.Contains(uid))
+                            existing.UserIds.Add(uid);
+                    }
+
                     updatedList.Add(existing);
                 }
                 else
@@ -87,7 +159,6 @@ public class CSVServices
                 }
             }
 
-            // Ajoute les personnages qui ne sont pas dans le CSV mais qui existent déjà
             var missing = existingData.Where(x => !updatedList.Any(y => y.Id == x.Id));
             updatedList.AddRange(missing);
         }
@@ -99,11 +170,32 @@ public class CSVServices
     {
         var csv = new StringBuilder();
         var properties = typeof(T).GetProperties();
+
+        var filteredData = data
+            .Where(item =>
+            {
+                var userIdsProp = typeof(T).GetProperty("UserIds");
+                if (userIdsProp != null)
+                {
+                    var value = userIdsProp.GetValue(item);
+                    if (value is List<string> userIds && userIds.Any())
+                        return true;
+                }
+                return false;
+            })
+            .ToList();
+
         csv.AppendLine(string.Join(";", properties.Select(p => p.Name)));
 
-        foreach (var item in data)
+        foreach (var item in filteredData)
         {
-            var values = properties.Select(p => p.GetValue(item)?.ToString() ?? "");
+            var values = properties.Select(p =>
+            {
+                var val = p.GetValue(item);
+                if (val is List<string> list)
+                    return string.Join(",", list);
+                return val?.ToString() ?? "";
+            });
             csv.AppendLine(string.Join(";", values));
         }
 
