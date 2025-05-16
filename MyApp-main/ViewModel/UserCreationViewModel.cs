@@ -3,6 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 using MyApp.Model;
 using MyApp.Service;
 using System.Data;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace MyApp.ViewModel;
@@ -23,6 +24,13 @@ public partial class UserCreationViewModel : ObservableObject
         if (string.IsNullOrWhiteSpace(Email) || string.IsNullOrWhiteSpace(Password))
         {
             await App.Current.MainPage.DisplayAlert("Erreur", "Email et mot de passe obligatoires.", "OK");
+            return;
+        }
+
+        // 🔒 Validation de l'email avec une expression régulière
+        if (!Regex.IsMatch(Email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+        {
+            await App.Current.MainPage.DisplayAlert("Erreur", "Adresse email invalide.", "OK");
             return;
         }
 

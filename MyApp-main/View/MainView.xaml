@@ -66,6 +66,16 @@
                         BackgroundColor="#2C3E50"
                         TextColor="White"
                         Command="{Binding GoToUserListCommand}" />
+
+                <Entry Placeholder="Nom du personnage à supprimer"
+                        Text="{Binding CharacterNameToDelete}"
+                        BackgroundColor="#2C2C2C"
+                        TextColor="White" />
+                                <Button Text="Supprimer le personnage"
+                         Command="{Binding DeleteCharacterByNameCommand}"
+                         BackgroundColor="#C0392B"
+                         TextColor="White"
+                         CornerRadius="10" />
             </HorizontalStackLayout>
 
             <Button Text="🔑 Connexion"

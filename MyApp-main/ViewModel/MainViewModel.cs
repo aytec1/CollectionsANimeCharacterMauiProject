@@ -25,6 +25,8 @@ public partial class MainViewModel : BaseViewModel
 
     [ObservableProperty]
     private bool emulatorOnOff = false;
+    [ObservableProperty]
+    private string characterNameToDelete;
 
     public bool isNavigating = false; // ✅ Pour éviter les redirections multiples
     private bool hasScanned = false; // ✅ Pour éviter la répétition du même ID
@@ -49,6 +51,17 @@ public partial class MainViewModel : BaseViewModel
         this.MyCSVServices = MyCSVServices;
         this.MyScanner = myScanner;
 
+        try
+        {
+            MyScanner.OpenPort();
+            MyScanner.SerialBuffer.Changed += OnSerialDataReception;
+        }
+        catch (Exception ex)
+        {
+            Shell.Current.DisplayAlert("Erreur de connexion", "Impossible d'accéder au port série. Le scanner est peut-être déconnecté.", "OK");
+            System.Diagnostics.Debug.WriteLine($"❌ Erreur SerialPort : {ex.Message}");
+        }
+
         MyScanner.OpenPort();
         MyScanner.SerialBuffer.Changed += OnSerialDataReception;
 
@@ -64,7 +77,7 @@ public partial class MainViewModel : BaseViewModel
         if (!hasScanned)
         {
             hasScanned = true;
-            MyScanner.SerialBuffer.Enqueue("4");
+            MyScanner.SerialBuffer.Enqueue("3");
         }
     }
 
@@ -143,8 +156,14 @@ public partial class MainViewModel : BaseViewModel
 
         Globals.MyAnimeCharacters = await MyCSVServices.LoadData(Globals.MyAnimeCharacters);
 
+        // 💾 Sauvegarde dans le JSON pour que ça persiste après fermeture
+        await MyJSONService.SetAnimeCharacters(Globals.MyAnimeCharacters);
+
+        await RefreshPage();
+
         IsBusy = false;
     }
+
 
 
     [RelayCommand]
@@ -167,6 +186,8 @@ public partial class MainViewModel : BaseViewModel
     {
         MyObservableList.Clear();
 
+        System.Diagnostics.Debug.WriteLine($"👤 Utilisateur connecté : {Globals.CurrentUser?.Id}");
+
         if (Globals.CurrentUser == null)
         {
             await Shell.Current.GoToAsync("LoginView");
@@ -176,13 +197,21 @@ public partial class MainViewModel : BaseViewModel
         if (Globals.MyAnimeCharacters.Count == 0)
             Globals.MyAnimeCharacters = await MyJSONService.GetAnimeCharacters();
 
-        foreach (var item in Globals.MyAnimeCharacters
-             .Where(c => c.UserIds != null && c.UserIds.Contains(Globals.CurrentUser.Id.ToString()))
-             .GroupBy(c => c.Id)
-             .Select(g => g.First()))
+        var currentUserId = Globals.CurrentUser.Id.ToString();
+        var userCharacters = Globals.MyAnimeCharacters
+            .Where(c => c.UserIds != null && c.UserIds.Contains(currentUserId))
+            .GroupBy(c => c.Id)
+            .Select(g => g.First())
+            .ToList();
+
+        System.Diagnostics.Debug.WriteLine($"🧩 Personnages pour l'utilisateur {currentUserId} : {userCharacters.Count}");
+
+        foreach (var item in userCharacters)
         {
+            System.Diagnostics.Debug.WriteLine($"🔸 {item.Id} - {item.Name}");
             MyObservableList.Add(item);
         }
+
 
         System.Diagnostics.Debug.WriteLine("✅ Liste filtrée : " + MyObservableList.Count);
     }
@@ -217,7 +246,7 @@ public partial class MainViewModel : BaseViewModel
 
                     MainThread.BeginInvokeOnMainThread(async () =>
                     {
-                        await GoToDetails(scannedId);
+                        await GoToCharacterPreview(scannedId);
                         isNavigating = false;
                     });
                 }
@@ -258,6 +287,41 @@ public partial class MainViewModel : BaseViewModel
     {
         { "selectedCharacter", id }
     });
+    }
+
+    [RelayCommand]
+    public async Task DeleteCharacterByName()
+    {
+        if (Globals.CurrentUser?.Role?.ToLower() != "admin")
+        {
+            await Shell.Current.DisplayAlert("Accès refusé", "Seuls les admins peuvent supprimer un personnage.", "OK");
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(CharacterNameToDelete))
+        {
+            await Shell.Current.DisplayAlert("Erreur", "Veuillez entrer un nom de personnage à supprimer.", "OK");
+            return;
+        }
+
+        var list = await MyJSONService.GetAnimeCharacters();
+        int countBefore = list.Count;
+
+        list = list.Where(c => !string.Equals(c.Name, CharacterNameToDelete.Trim(), StringComparison.OrdinalIgnoreCase)).ToList();
+        int countAfter = list.Count;
+
+        if (countAfter < countBefore)
+        {
+            await MyJSONService.SetAnimeCharacters(list);
+            System.Diagnostics.Debug.WriteLine($"🧹 {countBefore - countAfter} personnage(s) '{CharacterNameToDelete}' supprimé(s) du JSON.");
+            await Shell.Current.DisplayAlert("Succès", $"Le personnage '{CharacterNameToDelete}' a été supprimé.", "OK");
+            CharacterNameToDelete = string.Empty;
+        }
+        else
+        {
+            System.Diagnostics.Debug.WriteLine($"ℹ️ Aucun personnage nommé '{CharacterNameToDelete}' trouvé.");
+            await Shell.Current.DisplayAlert("Info", $"Aucun personnage nommé '{CharacterNameToDelete}' n'a été trouvé.", "OK");
+        }
     }
 
 }

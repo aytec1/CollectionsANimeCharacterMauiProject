@@ -108,6 +108,16 @@ public partial class DetailsViewModel : ObservableObject
 
         if (existing != null)
         {
+            // 🔒 Vérifie si on tente de créer un personnage avec le même Id mais un contenu différent
+            if (existing.Name != Name || existing.Origin != Origin)
+            {
+                await Shell.Current.DisplayAlert("Erreur",
+                    "Un personnage avec cet ID existe déjà avec un contenu différent.",
+                    "OK");
+                return;
+            }
+
+            // ✅ Mise à jour si utilisateur pas encore lié
             existing.Name = Name!;
             existing.Description = Description!;
             existing.Picture = Picture!;
@@ -116,12 +126,11 @@ public partial class DetailsViewModel : ObservableObject
             existing.Origin = Origin!;
 
             if (!existing.UserIds.Contains(currentUserId))
-            {
                 existing.UserIds.Add(currentUserId);
-            }
         }
         else
         {
+            // ✅ Création autorisée uniquement si aucun autre personnage avec ce même ID n'existe
             Globals.MyAnimeCharacters.Add(new AnimeCharacter
             {
                 Id = Id!,
@@ -137,4 +146,5 @@ public partial class DetailsViewModel : ObservableObject
 
         await MyJSONService.SetAnimeCharacters(Globals.MyAnimeCharacters);
     }
+
 }
