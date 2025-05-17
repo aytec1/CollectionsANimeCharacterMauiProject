@@ -3,48 +3,56 @@
   "WorkspaceRootPath": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\view\\usercreationview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|solutionrelative:view\\usercreationview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\view\\usercreationview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|solutionrelative:view\\usercreationview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\view\\usercreationview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|solutionrelative:view\\usercreationview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\viewmodel\\usercreationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|solutionrelative:viewmodel\\usercreationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|solutionrelative:viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\service\\mongouserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|solutionrelative:service\\mongouserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|solutionrelative:viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\service\\deviceorientationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|solutionrelative:service\\deviceorientationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\service\\jsonservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|solutionrelative:service\\jsonservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\service\\db_services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|solutionrelative:service\\db_services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\service\\deviceorientationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|solutionrelative:service\\deviceorientationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|solutionrelative:view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\service\\db_services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|solutionrelative:service\\db_services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\service\\csvservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|solutionrelative:service\\csvservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|solutionrelative:viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|solutionrelative:model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\model\\animecharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|solutionrelative:model\\animecharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|solutionrelative:viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|solutionrelative:view\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\viewmodel\\detailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -77,10 +85,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\viewmodel\\charactercatalogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|solutionrelative:viewmodel\\charactercatalogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\model\\animecharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|solutionrelative:model\\animecharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\viewmodel\\graphviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -121,10 +125,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|solutionrelative:model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DE35DE9-3D7E-4C2B-9577-4568822A109E}|MyApp.csproj|d:\\visual_studio\\collection_anime\\collectionsanimecharactermauiproject\\myapp-main\\globals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -190,98 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MainView.xaml",
-              "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\View\\MainView.xaml",
-              "RelativeDocumentMoniker": "View\\MainView.xaml",
-              "ToolTip": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\View\\MainView.xaml",
-              "RelativeToolTip": "View\\MainView.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-04T09:30:01.637Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DeviceOrientationService.cs",
-              "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Service\\DeviceOrientationService.cs",
-              "RelativeDocumentMoniker": "Service\\DeviceOrientationService.cs",
-              "ToolTip": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Service\\DeviceOrientationService.cs",
-              "RelativeToolTip": "Service\\DeviceOrientationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T17:05:47.374Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "JSONServices.cs",
-              "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Service\\JSONServices.cs",
-              "RelativeDocumentMoniker": "Service\\JSONServices.cs",
-              "ToolTip": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Service\\JSONServices.cs",
-              "RelativeToolTip": "Service\\JSONServices.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T14:02:55.938Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserCreationViewModel.cs",
-              "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\ViewModel\\UserCreationViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModel\\UserCreationViewModel.cs",
-              "ToolTip": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\ViewModel\\UserCreationViewModel.cs",
-              "RelativeToolTip": "ViewModel\\UserCreationViewModel.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAUwC0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T14:18:14.084Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MongoUserService.cs",
-              "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Service\\MongoUserService.cs",
-              "RelativeDocumentMoniker": "Service\\MongoUserService.cs",
-              "ToolTip": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Service\\MongoUserService.cs",
-              "RelativeToolTip": "Service\\MongoUserService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAYwBUAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T14:34:22.271Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CSVServices.cs",
-              "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Service\\CSVServices.cs",
-              "RelativeDocumentMoniker": "Service\\CSVServices.cs",
-              "ToolTip": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Service\\CSVServices.cs",
-              "RelativeToolTip": "Service\\CSVServices.cs",
-              "ViewState": "AgIAAK0AAAAAAAAAAAAmwA4BAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T12:08:11.426Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserCreationView.xaml",
-              "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\View\\UserCreationView.xaml",
-              "RelativeDocumentMoniker": "View\\UserCreationView.xaml",
-              "ToolTip": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\View\\UserCreationView.xaml",
-              "RelativeToolTip": "View\\UserCreationView.xaml",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwCwAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-13T14:09:34.594Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "UserCreationView.xaml.cs",
               "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\View\\UserCreationView.xaml.cs",
               "RelativeDocumentMoniker": "View\\UserCreationView.xaml.cs",
@@ -293,12 +202,20 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainView.xaml",
+              "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\View\\MainView.xaml",
+              "RelativeDocumentMoniker": "View\\MainView.xaml",
+              "ToolTip": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\View\\MainView.xaml",
+              "RelativeToolTip": "View\\MainView.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-04T09:30:01.637Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\ViewModel\\MainViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\MainViewModel.cs",
@@ -306,8 +223,7 @@
               "RelativeToolTip": "ViewModel\\MainViewModel.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAowD4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T07:29:14.804Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T07:29:14.804Z"
             },
             {
               "$type": "Document",
@@ -324,7 +240,128 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\ViewModel\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\LoginViewModel.cs",
+              "ToolTip": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\ViewModel\\LoginViewModel.cs",
+              "RelativeToolTip": "ViewModel\\LoginViewModel.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAUwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T14:43:49.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MongoUserService.cs",
+              "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Service\\MongoUserService.cs",
+              "RelativeDocumentMoniker": "Service\\MongoUserService.cs",
+              "ToolTip": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Service\\MongoUserService.cs",
+              "RelativeToolTip": "Service\\MongoUserService.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAUwE8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T14:34:22.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserCreationViewModel.cs",
+              "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\ViewModel\\UserCreationViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\UserCreationViewModel.cs",
+              "ToolTip": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\ViewModel\\UserCreationViewModel.cs",
+              "RelativeToolTip": "ViewModel\\UserCreationViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T14:18:14.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserCreationView.xaml",
+              "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\View\\UserCreationView.xaml",
+              "RelativeDocumentMoniker": "View\\UserCreationView.xaml",
+              "ToolTip": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\View\\UserCreationView.xaml",
+              "RelativeToolTip": "View\\UserCreationView.xaml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-13T14:09:34.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CSVServices.cs",
+              "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Service\\CSVServices.cs",
+              "RelativeDocumentMoniker": "Service\\CSVServices.cs",
+              "ToolTip": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Service\\CSVServices.cs",
+              "RelativeToolTip": "Service\\CSVServices.cs",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAmwA4BAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T12:08:11.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "JSONServices.cs",
+              "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Service\\JSONServices.cs",
+              "RelativeDocumentMoniker": "Service\\JSONServices.cs",
+              "ToolTip": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Service\\JSONServices.cs",
+              "RelativeToolTip": "Service\\JSONServices.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T14:02:55.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AnimeCharacter.cs",
+              "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Model\\AnimeCharacter.cs",
+              "RelativeDocumentMoniker": "Model\\AnimeCharacter.cs",
+              "ToolTip": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Model\\AnimeCharacter.cs",
+              "RelativeToolTip": "Model\\AnimeCharacter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T12:41:19.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Model\\User.cs",
+              "RelativeDocumentMoniker": "Model\\User.cs",
+              "ToolTip": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Model\\User.cs",
+              "RelativeToolTip": "Model\\User.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T14:27:39.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DeviceOrientationService.cs",
+              "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Service\\DeviceOrientationService.cs",
+              "RelativeDocumentMoniker": "Service\\DeviceOrientationService.cs",
+              "ToolTip": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Service\\DeviceOrientationService.cs",
+              "RelativeToolTip": "Service\\DeviceOrientationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T17:05:47.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "DetailsViewModel.cs",
               "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\ViewModel\\DetailsViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\DetailsViewModel.cs",
@@ -332,25 +369,11 @@
               "RelativeToolTip": "ViewModel\\DetailsViewModel.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAcwJQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T12:50:45.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T12:50:45.78Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\ViewModel\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModel\\LoginViewModel.cs",
-              "ToolTip": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\ViewModel\\LoginViewModel.cs",
-              "RelativeToolTip": "ViewModel\\LoginViewModel.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAADwvzEAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T14:43:49.39Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "CharacterPreviewView.xaml",
               "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\View\\CharacterPreviewView.xaml",
               "RelativeDocumentMoniker": "View\\CharacterPreviewView.xaml",
@@ -362,7 +385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "CharacterCatalogView.xaml",
               "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\View\\CharacterCatalogView.xaml",
               "RelativeDocumentMoniker": "View\\CharacterCatalogView.xaml",
@@ -374,7 +397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "DetailsView.xaml",
               "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\View\\DetailsView.xaml",
               "RelativeDocumentMoniker": "View\\DetailsView.xaml",
@@ -382,12 +405,11 @@
               "RelativeToolTip": "View\\DetailsView.xaml",
               "ViewState": "AgIAACoAAAAAAAAAAAAAAEoAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-14T12:50:40.922Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T12:50:40.922Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "LoginView.xaml",
               "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\View\\LoginView.xaml",
               "RelativeDocumentMoniker": "View\\LoginView.xaml",
@@ -399,7 +421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "UserListView.xaml",
               "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\View\\UserListView.xaml",
               "RelativeDocumentMoniker": "View\\UserListView.xaml",
@@ -411,7 +433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "GraphView.xaml",
               "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\View\\GraphView.xaml",
               "RelativeDocumentMoniker": "View\\GraphView.xaml",
@@ -423,7 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "GraphViewModel.cs",
               "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\ViewModel\\GraphViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\GraphViewModel.cs",
@@ -435,19 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AnimeCharacter.cs",
-              "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Model\\AnimeCharacter.cs",
-              "RelativeDocumentMoniker": "Model\\AnimeCharacter.cs",
-              "ToolTip": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Model\\AnimeCharacter.cs",
-              "RelativeToolTip": "Model\\AnimeCharacter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T12:41:19.129Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "CharacterCatalogViewModel.cs",
               "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\ViewModel\\CharacterCatalogViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\CharacterCatalogViewModel.cs",
@@ -459,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "CharacterPreviewView.xaml.cs",
               "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\View\\CharacterPreviewView.xaml.cs",
               "RelativeDocumentMoniker": "View\\CharacterPreviewView.xaml.cs",
@@ -471,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "AppShell.xaml.cs",
               "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "AppShell.xaml.cs",
@@ -483,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "CharacterCatalogView.xaml.cs",
               "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\View\\CharacterCatalogView.xaml.cs",
               "RelativeDocumentMoniker": "View\\CharacterCatalogView.xaml.cs",
@@ -495,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "DetailsView.xaml.cs",
               "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\View\\DetailsView.xaml.cs",
               "RelativeDocumentMoniker": "View\\DetailsView.xaml.cs",
@@ -507,7 +517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MauiProgram.cs",
@@ -519,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "MainView.xaml.cs",
               "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\View\\MainView.xaml.cs",
               "RelativeDocumentMoniker": "View\\MainView.xaml.cs",
@@ -531,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "CharacterPreviewViewModel.cs",
               "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\ViewModel\\CharacterPreviewViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\CharacterPreviewViewModel.cs",
@@ -543,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "BaseViewModel.cs",
               "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\ViewModel\\BaseViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\BaseViewModel.cs",
@@ -555,7 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\AppShell.xaml",
               "RelativeDocumentMoniker": "AppShell.xaml",
@@ -564,18 +574,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-05-13T15:21:58.024Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Model\\User.cs",
-              "RelativeDocumentMoniker": "Model\\User.cs",
-              "ToolTip": "D:\\VIsual_Studio\\Collection_Anime\\CollectionsANimeCharacterMauiProject\\MyApp-main\\Model\\User.cs",
-              "RelativeToolTip": "Model\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T14:27:39.407Z"
             },
             {
               "$type": "Document",

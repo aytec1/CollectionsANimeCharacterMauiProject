@@ -36,13 +36,13 @@ public partial class LoginViewModel : ObservableObject
 
         try
         {
-            var users = await _userService.GetAllUsersAsync();
-            System.Diagnostics.Debug.WriteLine($"📦 {users.Count} utilisateurs récupérés");
+            var isAuthenticated = _userService.AuthenticateUser(Email, Password);
 
-            var user = users.FirstOrDefault(u => u.Email == Email && u.Password == Password);
-
-            if (user != null)
+            if (isAuthenticated)
             {
+                var users = await _userService.GetAllUsersAsync();
+                var user = users.FirstOrDefault(u => u.Email == Email);
+
                 System.Diagnostics.Debug.WriteLine("✅ Connexion réussie");
                 Globals.CurrentUser = user;
                 await Shell.Current.GoToAsync("//MainView");
@@ -61,6 +61,7 @@ public partial class LoginViewModel : ObservableObject
             HasError = true;
         }
     }
+
     [RelayCommand]
     async Task GoToUserCreation()
     {

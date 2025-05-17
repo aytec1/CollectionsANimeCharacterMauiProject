@@ -36,11 +36,6 @@
                 <Entry Placeholder="Mot de passe" Text="{Binding Password}" IsPassword="True" TextColor="White" BackgroundColor="Transparent" />
             </Border>
 
-            <!-- Rôle -->
-            <Border Stroke="#444" BackgroundColor="#1E1E1E" StrokeShape="RoundRectangle 12">
-                <Entry Placeholder="Rôle (ex: admin)" Text="{Binding Role}" TextColor="White" BackgroundColor="Transparent" />
-            </Border>
-
             <!-- Bouton création -->
             <Button Text=" Créer l'utilisateur"
                     HeightRequest="50"

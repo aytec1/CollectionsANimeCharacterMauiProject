@@ -30,7 +30,7 @@
     <AppXManifest Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-05-16T19:39:46.458</Modified>
+      <Modified>2025-05-17T17:38:06.933</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\MyApp.dll">
       <PackagePath>MyApp.dll</PackagePath>
-      <Modified>2025-05-16T19:39:46.093</Modified>
+      <Modified>2025-05-17T17:38:05.867</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MyApp.exe</PackagePath>
-      <Modified>2025-05-16T19:39:46.096</Modified>
+      <Modified>2025-05-17T17:38:05.937</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\VIsual_Studio\Collection_Anime\CollectionsANimeCharacterMauiProject\MyApp-main\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

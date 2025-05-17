@@ -16,7 +16,6 @@ public partial class UserCreationViewModel : ObservableObject
     [ObservableProperty] private string lastName;
     [ObservableProperty] private string email;
     [ObservableProperty] private string password;
-    [ObservableProperty] private string role;
 
     [RelayCommand]
     private async Task CreateUser()
@@ -27,7 +26,6 @@ public partial class UserCreationViewModel : ObservableObject
             return;
         }
 
-        // 🔒 Validation de l'email avec une expression régulière
         if (!Regex.IsMatch(Email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
         {
             await App.Current.MainPage.DisplayAlert("Erreur", "Adresse email invalide.", "OK");
@@ -40,7 +38,7 @@ public partial class UserCreationViewModel : ObservableObject
             LastName = LastName,
             Email = Email,
             Password = Password,
-            Role = Role
+            Role = "user" // 🔒 rôle imposé ici
         };
 
         mongoService.AddUser(user);
@@ -51,6 +49,6 @@ public partial class UserCreationViewModel : ObservableObject
 
     private void ClearFields()
     {
-        FirstName = LastName = Email = Password = Role = string.Empty;
+        FirstName = LastName = Email = Password = string.Empty;
     }
 }

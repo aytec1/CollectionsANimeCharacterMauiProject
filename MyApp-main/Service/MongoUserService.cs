@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography;
+using System.Text;
 using System.Threading.Tasks;
 using MongoDB.Bson;
 using MongoDB.Driver;
@@ -21,8 +23,9 @@ namespace MyApp.Service
 
         public void AddUser(User user)
         {
+            user.Password = HashPassword(user.Password);
             _users.InsertOne(user);
-            Console.WriteLine("Utilisateur ajouté !");
+            Console.WriteLine("Utilisateur ajouté avec mot de passe sécurisé (PBKDF2) !");
         }
 
         public List<User> GetAllUsers()
@@ -30,10 +33,48 @@ namespace MyApp.Service
             return _users.Find(u => true).ToList();
         }
 
-        // ✅ Méthode async attendue par UserListViewModel
         public async Task<List<User>> GetAllUsersAsync()
         {
             return await _users.Find(u => true).ToListAsync();
+        }
+
+        public bool AuthenticateUser(string email, string password)
+        {
+            var user = _users.Find(u => u.Email == email).FirstOrDefault();
+            if (user == null) return false;
+
+            return VerifyPassword(password, user.Password);
+        }
+
+        private string HashPassword(string password)
+        {
+            byte[] salt = RandomNumberGenerator.GetBytes(16);
+            var hash = new Rfc2898DeriveBytes(password, salt, 100_000, HashAlgorithmName.SHA256);
+            byte[] hashBytes = hash.GetBytes(32);
+
+            byte[] hashWithSalt = new byte[48];
+            Array.Copy(salt, 0, hashWithSalt, 0, 16);
+            Array.Copy(hashBytes, 0, hashWithSalt, 16, 32);
+
+            return Convert.ToBase64String(hashWithSalt);
+        }
+
+        private bool VerifyPassword(string password, string hashedPassword)
+        {
+            byte[] hashWithSalt = Convert.FromBase64String(hashedPassword);
+            byte[] salt = new byte[16];
+            Array.Copy(hashWithSalt, 0, salt, 0, 16);
+
+            var hash = new Rfc2898DeriveBytes(password, salt, 100_000, HashAlgorithmName.SHA256);
+            byte[] hashBytes = hash.GetBytes(32);
+
+            for (int i = 0; i < 32; i++)
+            {
+                if (hashWithSalt[i + 16] != hashBytes[i])
+                    return false;
+            }
+
+            return true;
         }
     }
 }
