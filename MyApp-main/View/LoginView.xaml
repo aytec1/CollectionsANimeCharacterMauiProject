@@ -43,21 +43,27 @@
                    FontAttributes="Italic" />
 
             <!-- Connexion -->
-            <Button Text=" Se connecter"
-                    BackgroundColor="#E74C3C"
-                    TextColor="White"
-                    FontAttributes="Bold"
-                    CornerRadius="15"
-                    HeightRequest="50"
-                    Command="{Binding LoginCommand}" />
+            <Button x:Name="LoginButton"
+             Text=" Se connecter"
+             BackgroundColor="#E74C3C"
+             TextColor="White"
+             FontAttributes="Bold"
+             CornerRadius="15"
+             HeightRequest="50"
+             Command="{Binding LoginCommand}"
+             Pressed="LoginButton_Pressed"
+             Released="LoginButton_Released" />
 
             <!-- Lien vers création -->
-            <Button Text="📝 Créer un compte"
-                    BackgroundColor="Transparent"
-                    TextColor="#3498DB"
-                    FontAttributes="Bold"
-                    Command="{Binding GoToUserCreationCommand}"
-                    HorizontalOptions="Center" />
+            <Button x:Name="CreateAccountButton"
+             Text="📝 Créer un compte"
+             BackgroundColor="Transparent"
+             TextColor="#3498DB"
+             FontAttributes="Bold"
+             Command="{Binding GoToUserCreationCommand}"
+             HorizontalOptions="Center"
+             Pressed="CreateAccountButton_Pressed"
+             Released="CreateAccountButton_Released" />
 
         </VerticalStackLayout>
     </ScrollView>

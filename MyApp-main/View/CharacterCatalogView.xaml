@@ -35,13 +35,16 @@
                                        FontSize="14"
                                        TextColor="#BDC3C7" />
 
-                                <Button Text="➕ Ajouter à ma collection"
-                                        BackgroundColor="#E67E22"
-                                        TextColor="White"
-                                        FontAttributes="Bold"
-                                        CornerRadius="10"
-                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewModel:CharacterCatalogViewModel}}, Path=AddToUserCollectionCommand}"
-                                        CommandParameter="{Binding .}" />
+                                <Button x:Name="AddToCollectionButton"
+                                Text="➕ Ajouter à ma collection"
+                                BackgroundColor="#E67E22"
+                                TextColor="White"
+                                FontAttributes="Bold"
+                                CornerRadius="10"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewModel:CharacterCatalogViewModel}}, Path=AddToUserCollectionCommand}"
+                                CommandParameter="{Binding .}"
+                                Pressed="AddToCollectionButton_Pressed"
+                                Released="AddToCollectionButton_Released" />
                             </VerticalStackLayout>
                         </Frame>
                     </DataTemplate>

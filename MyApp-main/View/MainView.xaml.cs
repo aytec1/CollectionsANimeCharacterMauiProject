@@ -2,6 +2,7 @@ using CommunityToolkit.Maui.Views;
 using MyApp.Model;
 using MyApp.ViewModel;
 
+
 namespace MyApp.View;
 
 public partial class MainView : ContentPage
@@ -71,5 +72,17 @@ public partial class MainView : ContentPage
 
         tapCount = 0;
         tappedSender = null;
+    }
+
+    private async void Button_Clicked(object sender, EventArgs e)
+    {
+        if (sender is Button btn)
+        {
+            await btn.ScaleTo(0.95, 100);
+            btn.Opacity = 0.6;
+            await Task.Delay(100);
+            await btn.ScaleTo(1, 100);
+            btn.Opacity = 1;
+        }
     }
 }

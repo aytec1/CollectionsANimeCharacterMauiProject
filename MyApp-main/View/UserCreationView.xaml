@@ -37,13 +37,16 @@
             </Border>
 
             <!-- Bouton création -->
-            <Button Text=" Créer l'utilisateur"
-                    HeightRequest="50"
-                    BackgroundColor="#E74C3C"
-                    TextColor="White"
-                    FontAttributes="Bold"
-                    CornerRadius="15"
-                    Command="{Binding CreateUserCommand}" />
+            <Button x:Name="CreateUserButton"
+            Text=" Créer l'utilisateur"
+            HeightRequest="50"
+            BackgroundColor="#E74C3C"
+            TextColor="White"
+            FontAttributes="Bold"
+            CornerRadius="15"
+            Command="{Binding CreateUserCommand}"
+            Pressed="CreateUserButton_Pressed"
+            Released="CreateUserButton_Released" />
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

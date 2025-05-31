@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Microsoft.Maui.Networking;
 
 namespace MyApp.Service;
 
@@ -15,6 +16,11 @@ public class JSONServices
 
     internal async Task<List<AnimeCharacter>> GetAnimeCharacters()
     {
+        if (!IsConnected())
+        {
+            await Shell.Current.DisplayAlert("Erreur réseau", "Pas de connexion Internet. Données non sauvegardées.", "OK");
+            return null;
+        }
         //var url = "http://localhost:32774/json?FileName=MyAnimeCharacters.json";
         var url = "https://185.157.245.38:5000/json?FileName=MyAnimeCharacters.json";
 
@@ -45,6 +51,12 @@ public class JSONServices
 
     internal async Task SetAnimeCharacters(List<AnimeCharacter> MyList)
     {
+
+        if (!IsConnected())
+        {
+            await Shell.Current.DisplayAlert("Erreur réseau", "Pas de connexion Internet. Données non sauvegardées.", "OK");
+            return;
+        }
         //var url = "http://localhost:32774/json";
         var url = "https://185.157.245.38:5000/json";
                    
@@ -78,5 +90,10 @@ public class JSONServices
         {
             // Gérer les erreurs
         }
+    }
+    private bool IsConnected()
+    {
+        var access = Connectivity.Current.NetworkAccess;
+        return access == NetworkAccess.Internet;
     }
 }

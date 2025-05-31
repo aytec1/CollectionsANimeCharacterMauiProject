@@ -6,15 +6,18 @@ using System.Threading.Tasks;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using MyApp.Model;
+using Microsoft.Maui.Networking;
 
 namespace MyApp.Service
 {
     public class MongoUserService
     {
+
         private readonly IMongoCollection<User> _users;
 
         public MongoUserService()
         {
+            
             string connectionString = "mongodb://student:IAmTh3B3st@185.157.245.38:5003";
             var client = new MongoClient(connectionString);
             var database = client.GetDatabase("DBAnime");
@@ -23,6 +26,11 @@ namespace MyApp.Service
 
         public void AddUser(User user)
         {
+            if (!IsConnected())
+            {
+                Console.WriteLine("❌ Pas de connexion Internet pour accéder à MongoDB.");
+                return; // ou return une liste vide, ou afficher une alerte selon le contexte
+            }
             user.Password = HashPassword(user.Password);
             _users.InsertOne(user);
             Console.WriteLine("Utilisateur ajouté avec mot de passe sécurisé (PBKDF2) !");
@@ -30,16 +38,39 @@ namespace MyApp.Service
 
         public List<User> GetAllUsers()
         {
+            if (!IsConnected())
+            {
+                Console.WriteLine("❌ Pas de connexion Internet pour accéder à MongoDB.");
+                return null; // ou return une liste vide, ou afficher une alerte selon le contexte
+            }
             return _users.Find(u => true).ToList();
         }
 
         public async Task<List<User>> GetAllUsersAsync()
         {
+            if (!IsConnected())
+            {
+                await Shell.Current.DisplayAlert("Erreur réseau", "Pas de connexion Internet. Données non sauvegardées.", "OK");
+                return null;
+            }
             return await _users.Find(u => true).ToListAsync();
         }
 
         public bool AuthenticateUser(string email, string password)
         {
+            if (!IsConnected())
+            {
+                // Appeler DisplayAlert sur le thread UI
+                MainThread.BeginInvokeOnMainThread(async () =>
+                {
+                    await Shell.Current.DisplayAlert(
+                        "Erreur réseau",
+                        "Vous devez être connecté à Internet pour vous authentifier.",
+                        "OK");
+                });
+
+                return false;
+            }
             var user = _users.Find(u => u.Email == email).FirstOrDefault();
             if (user == null) return false;
 
@@ -75,6 +106,11 @@ namespace MyApp.Service
             }
 
             return true;
+        }
+        private bool IsConnected()
+        {
+            var access = Connectivity.Current.NetworkAccess;
+            return access == NetworkAccess.Internet;
         }
     }
 }

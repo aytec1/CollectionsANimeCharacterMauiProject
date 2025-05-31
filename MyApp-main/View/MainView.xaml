@@ -2,120 +2,67 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodel="clr-namespace:MyApp.ViewModel"
-             xmlns:model="clr-namespace:MyApp.Model"             
+             xmlns:model="clr-namespace:MyApp.Model"
              x:Class="MyApp.View.MainView"
              x:DataType="viewmodel:MainViewModel"
              BackgroundColor="#1A1A1D">
+
     <ScrollView>
         <VerticalStackLayout Spacing="20" Padding="20">
+
             <HorizontalStackLayout Padding="10" Spacing="10">
-                <Label Text="🎯 Emulateur QR : " 
-                       TextColor="White"
-                       FontAttributes="Bold"
-                       FontSize="18"
-                       VerticalOptions="Center"/>
-                <Switch IsToggled="{Binding EmulatorOnOff}"
-                        OnColor="#FF4500"
-                        ThumbColor="White"
-                        VerticalOptions="Center"/>
+                <Label Text="🎯 Emulateur QR : " TextColor="White" FontAttributes="Bold" FontSize="18" VerticalOptions="Center"/>
+                <Switch IsToggled="{Binding EmulatorOnOff}" OnColor="#FF4500" ThumbColor="White" VerticalOptions="Center"/>
             </HorizontalStackLayout>
 
-            <Label Text="🧙‍♂️ Gestion des personnages"
-                   FontSize="24"
-                   FontAttributes="Bold"
-                   HorizontalOptions="Center"
-                   TextColor="#FFD700" />
+            <Label Text="🧙‍♂️ Gestion des personnages" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" TextColor="#FFD700" />
 
-            <Button Text="✨ Ajouter un objet"
-                    BackgroundColor="#FF4500"
-                    TextColor="White"
-                    CornerRadius="15"
-                    HeightRequest="50"
-                    Command="{Binding GoToDetailsCommand}"
-                    CommandParameter="0" />
+            <Button Text="✨ Ajouter un objet" BackgroundColor="#FF4500" TextColor="White" CornerRadius="15" HeightRequest="50"
+                    Command="{Binding GoToDetailsCommand}" CommandParameter="0" Clicked="Button_Clicked"/>
 
             <HorizontalStackLayout Spacing="10">
-                <Button Text="📥 Télécharger"
-                        BackgroundColor="#3498DB"
-                        TextColor="White"
-                        Command="{Binding PrintToCSVCommand}" />
-
-                <Button Text="📤 Charger"
-                        BackgroundColor="#27AE60"
-                        TextColor="White"
-                        Command="{Binding LoadFromCSVCommand}" />
-
-                <Button Text="📊 Graphique"
-                        BackgroundColor="#8E44AD"
-                        TextColor="White"
-                        Command="{Binding GoToGraphCommand}" />
+                <Button Text="📥 Télécharger" BackgroundColor="#3498DB" TextColor="White" Command="{Binding PrintToCSVCommand}" Clicked="Button_Clicked"/>
+                <Button Text="📤 Charger" BackgroundColor="#27AE60" TextColor="White" Command="{Binding LoadFromCSVCommand}" Clicked="Button_Clicked"/>
+                <Button Text="📊 Graphique" BackgroundColor="#8E44AD" TextColor="White" Command="{Binding GoToGraphCommand}" Clicked="Button_Clicked"/>
             </HorizontalStackLayout>
 
             <HorizontalStackLayout Spacing="10">
-                <Button Text="📂 Collection"
-                        BackgroundColor="#E67E22"
-                        TextColor="White"
-                        Command="{Binding UploadJSONCommand}" />
+                <Button Text="📂 Collection" BackgroundColor="#E67E22" TextColor="White" Command="{Binding UploadJSONCommand}" Clicked="Button_Clicked"/>
+                <Button Text="👤 Ajouter utilisateur" BackgroundColor="#2C3E50" TextColor="White" Command="{Binding GoToUserCreationCommand}" Clicked="Button_Clicked"/>
+                <Button Text="📋 Voir utilisateurs" BackgroundColor="#2C3E50" TextColor="White" Command="{Binding GoToUserListCommand}" Clicked="Button_Clicked"/>
 
-                <Button Text="👤 Ajouter utilisateur"
-                        BackgroundColor="#2C3E50"
-                        TextColor="White"
-                        Command="{Binding GoToUserCreationCommand}" />
-
-                <Button Text="📋 Voir utilisateurs"
-                        BackgroundColor="#2C3E50"
-                        TextColor="White"
-                        Command="{Binding GoToUserListCommand}" />
-
-                <Entry Placeholder="Nom du personnage à supprimer"
-                        Text="{Binding CharacterNameToDelete}"
-                        BackgroundColor="#2C2C2C"
-                        TextColor="White" />
-                                <Button Text="Supprimer le personnage"
-                         Command="{Binding DeleteCharacterByNameCommand}"
-                         BackgroundColor="#C0392B"
-                         TextColor="White"
-                         CornerRadius="10" />
+                <Entry Placeholder="Nom du personnage à supprimer" Text="{Binding CharacterNameToDelete}" BackgroundColor="#2C2C2C" TextColor="White"/>
+                <Button Text="Supprimer le personnage" Command="{Binding DeleteCharacterByNameCommand}" BackgroundColor="#C0392B" TextColor="White" CornerRadius="10" Clicked="Button_Clicked"/>
             </HorizontalStackLayout>
 
-            <Button Text="🔑 Connexion"
-                    BackgroundColor="#16A085"
-                    TextColor="White"
-                    Command="{Binding GoToLoginCommand}" />
-
-            <Button Text="📚 Catalogue"
-                    BackgroundColor="#F39C12"
-                    TextColor="White"
-                    Command="{Binding GoToCharacterCatalogCommand}" />
+            <Button Text="🔑 Connexion" BackgroundColor="#16A085" TextColor="White" Command="{Binding GoToLoginCommand}" Clicked="Button_Clicked"/>
+            <Button Text="📚 Catalogue" BackgroundColor="#F39C12" TextColor="White" Command="{Binding GoToCharacterCatalogCommand}" Clicked="Button_Clicked"/>
 
             <CollectionView ItemsSource="{Binding MyObservableList}" SelectionMode="None">
                 <CollectionView.ItemsLayout>
-                    <GridItemsLayout Orientation="Vertical" Span="2" HorizontalItemSpacing="10" VerticalItemSpacing="10" />
+                    <GridItemsLayout Orientation="Vertical" Span="2" HorizontalItemSpacing="10" VerticalItemSpacing="10"/>
                 </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:AnimeCharacter">
                         <Border StrokeThickness="3" BackgroundColor="#2E2E2E" Stroke="White" Padding="10" StrokeShape="RoundRectangle 10,10,10,10">
                             <Grid HeightRequest="120" ColumnDefinitions="0.5*,*">
-                                <Image Grid.Column="0"
-                                       Source="{Binding Picture}"
-                                       HorizontalOptions="Start"
-                                       Aspect="AspectFit"
-                                       HeightRequest="100">
+                                <Image Grid.Column="0" Source="{Binding Picture}" HorizontalOptions="Start" Aspect="AspectFit" HeightRequest="100">
                                     <Image.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="OnCharacterTapped" />
+                                        <TapGestureRecognizer Tapped="OnCharacterTapped"/>
                                     </Image.GestureRecognizers>
                                 </Image>
                                 <VerticalStackLayout Grid.Column="1" Spacing="5">
-                                    <Label Text="{Binding Name}" FontSize="18" FontAttributes="Bold" TextColor="#F1C40F" />
-                                    <Label Text="{Binding Description}" FontSize="14" TextColor="White" />
-                                    <Label Text="{Binding SpecialAttack}" FontSize="14" TextColor="#EC7063" />
-                                    <Label Text="{Binding Origin}" FontSize="12" TextColor="#BDC3C7" />
+                                    <Label Text="{Binding Name}" FontSize="18" FontAttributes="Bold" TextColor="#F1C40F"/>
+                                    <Label Text="{Binding Description}" FontSize="14" TextColor="White"/>
+                                    <Label Text="{Binding SpecialAttack}" FontSize="14" TextColor="#EC7063"/>
+                                    <Label Text="{Binding Origin}" FontSize="12" TextColor="#BDC3C7"/>
                                 </VerticalStackLayout>
                             </Grid>
                         </Border>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
